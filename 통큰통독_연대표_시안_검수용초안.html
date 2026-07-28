@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>통큰통독 연대표 — 시간흐름으로 본 신구약 성경의 분류</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0E1F38">
+<meta name="description" content="통큰통독 성경 연대표. 시대별 해설 영상과 함께 성경 전체의 흐름을 봅니다.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="통큰통독 연대표">
+<meta property="og:description" content="시간흐름으로 본 신구약 성경의 분류 — 시대별 해설 영상 연동">
+<meta property="og:locale" content="ko_KR">
+<!-- 카카오톡·문자 링크 미리보기용 이미지: 같은 폴더에 og.jpg(1200x630)를 올린 뒤 아래 주석을 푸세요
+<meta property="og:image" content="https://주소/og.jpg"> -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230E1F38'/%3E%3Crect x='5' y='9' width='22' height='4' rx='1' fill='%23F2CC0C'/%3E%3Crect x='5' y='15' width='14' height='4' rx='1' fill='%23F25260'/%3E%3Crect x='5' y='21' width='18' height='4' rx='1' fill='%236FA83C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --ink:#0E1F38;--ink-2:#152A46;--teal:#16403C;--cream:#F2ECD8;--gold:#F2CC0C;
+  --coral:#F25260;--leaf:#6FA83C;
+  --line:rgba(242,236,216,.14);--line-2:rgba(242,236,216,.28);--dim:rgba(242,236,216,.52);
+  --f-disp:'Black Han Sans','Pretendard Variable',sans-serif;
+  --f-body:'Pretendard Variable',Pretendard,-apple-system,'Malgun Gothic',sans-serif;
+  --f-num:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:radial-gradient(1200px 600px at 12% -10%,#1B3A5E 0,transparent 60%),
+     radial-gradient(900px 500px at 96% 4%,#17403B 0,transparent 55%),var(--ink);
+  color:var(--cream);font-family:var(--f-body);font-size:14px;-webkit-font-smoothing:antialiased}
+button{font-family:inherit;color:inherit;cursor:pointer}
+input{font-family:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+.sheet{max-width:1560px;margin:0 auto;padding:28px 24px 80px}
+.sheet-head{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;justify-content:space-between;
+  border-bottom:1px solid var(--line-2);padding-bottom:16px;margin-bottom:34px}
+.brandmark{display:flex;align-items:center;gap:12px}
+.brandmark .tag{background:var(--gold);color:#1A1A1A;font-family:var(--f-disp);font-size:15px;
+  padding:5px 8px 4px;transform:rotate(-6deg);letter-spacing:-.5px;line-height:1}
+.brandmark h1{font-family:var(--f-disp);font-size:25px;font-weight:400;margin:0;letter-spacing:-.8px}
+.brandmark p{margin:3px 0 0;font-size:12px;color:var(--dim)}
+.sheet-meta{font-family:var(--f-num);font-size:11px;color:var(--dim);text-align:right;line-height:1.7}
+.sheet-meta b{color:var(--gold);font-weight:600}
+
+.step{margin-bottom:40px}
+.step-h{display:flex;align-items:baseline;gap:11px;margin-bottom:15px}
+.step-h em{font-family:var(--f-num);font-size:11px;color:var(--gold);font-style:normal;letter-spacing:.1em}
+.step-h h2{font-family:var(--f-disp);font-weight:400;font-size:18px;margin:0;letter-spacing:-.4px}
+.step-h span{font-size:12.5px;color:var(--dim)}
+
+/* ---------- 책 페이지 QR ---------- */
+.book{background:#F2ECD8;border-radius:6px;padding:20px 22px;color:#243447;
+  box-shadow:0 24px 50px -26px rgba(0,0,0,.8);position:relative;overflow:hidden}
+.book::after{content:"";position:absolute;left:0;top:0;bottom:0;width:26px;
+  background:linear-gradient(90deg,rgba(0,0,0,.16),rgba(0,0,0,0))}
+.book-h{display:flex;align-items:baseline;gap:10px;margin:0 0 14px 12px;
+  border-bottom:1.5px solid #C9C0A6;padding-bottom:9px}
+.book-h b{font-family:var(--f-disp);font-weight:400;font-size:16px;color:#1F3A5F;letter-spacing:-.3px}
+.book-h i{font-style:normal;font-size:11.5px;color:#7A745F}
+.qr-row{display:flex;gap:12px;overflow-x:auto;padding:2px 2px 6px 12px;scrollbar-width:thin}
+.qr-row::-webkit-scrollbar{height:7px}
+.qr-row::-webkit-scrollbar-thumb{background:#C9C0A6;border-radius:4px}
+.qr-card{flex:none;width:126px;background:#fff;border:1px solid #DBD3BC;border-radius:5px;
+  padding:11px 10px 9px;text-align:center;transition:.16s;color:#243447}
+.qr-card:hover{border-color:#1F3A5F;transform:translateY(-2px);box-shadow:0 8px 16px -8px rgba(0,0,0,.35)}
+.qr-card[aria-current="true"]{border-color:var(--coral);box-shadow:0 0 0 2px rgba(242,82,96,.25)}
+.qr-card svg{width:74px;height:74px;display:block;margin:0 auto 7px}
+.qr-card .en{font-family:var(--f-disp);font-weight:400;font-size:13px;letter-spacing:-.3px;line-height:1.25;color:#1F3A5F}
+.qr-card .ed{font-family:var(--f-num);font-size:9px;color:#8A836B;margin-top:3px}
+.qr-card .ev{display:inline-block;margin-top:6px;background:#1F3A5F;color:#F2ECD8;border-radius:3px;
+  font-size:9.5px;padding:2px 6px;letter-spacing:.02em}
+.book-foot{margin:12px 0 0 12px;font-size:11.5px;color:#7A745F;line-height:1.6}
+
+/* ---------- 기기 ---------- */
+.stage{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:34px;align-items:start}
+@media(max-width:1180px){.stage{grid-template-columns:1fr}}
+.device-cap{display:flex;align-items:center;gap:8px;margin-bottom:10px;font-size:11px;
+  letter-spacing:.14em;color:var(--dim);text-transform:uppercase;font-family:var(--f-num)}
+.device-cap::after{content:"";flex:1;height:1px;background:var(--line)}
+.pc{border:1px solid var(--line-2);border-radius:10px;overflow:hidden;background:var(--ink-2);
+  box-shadow:0 30px 70px -30px rgba(0,0,0,.8)}
+.pc-bar{display:flex;align-items:center;gap:7px;padding:9px 12px;background:rgba(0,0,0,.28);border-bottom:1px solid var(--line)}
+.pc-bar i{width:9px;height:9px;border-radius:50%;background:var(--line-2);display:block}
+.pc-url{flex:1;margin-left:8px;font-family:var(--f-num);font-size:10.5px;color:var(--dim);
+  background:rgba(0,0,0,.3);border-radius:4px;padding:4px 9px}
+.pc-url b{color:var(--gold);font-weight:600}
+.phone-wrap{position:sticky;top:24px}
+.phone{position:relative;margin:0 auto;width:330px;height:690px;border:9px solid #060F1C;
+  border-radius:38px;background:var(--ink-2);overflow:hidden;
+  box-shadow:0 30px 60px -25px rgba(0,0,0,.85),0 0 0 1px var(--line-2);
+  transition:width .5s cubic-bezier(.4,0,.2,1),height .5s cubic-bezier(.4,0,.2,1),border-radius .5s}
+.phone::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);
+  width:86px;height:5px;border-radius:3px;background:#060F1C;z-index:60;transition:opacity .3s}
+.phone[data-o="land"]{width:690px;height:330px;border-radius:30px}
+.phone[data-o="land"]::before{opacity:0}
+@media(max-width:1180px){.phone[data-o="land"]{width:100%;max-width:690px}}
+.phone-tools{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap}
+.tbtn{background:transparent;border:1px solid var(--line-2);color:var(--dim);border-radius:999px;
+  padding:7px 14px;font-size:12px;transition:.18s}
+.tbtn:hover{border-color:var(--gold);color:var(--cream)}
+.tbtn[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#16233A;font-weight:600}
+.syncline{display:flex;align-items:center;gap:8px;justify-content:center;margin-top:12px;
+  font-size:11px;color:var(--dim);font-family:var(--f-num);text-align:center}
+.syncdot{width:6px;height:6px;border-radius:50%;background:var(--leaf);flex:none;transition:.2s}
+.syncline.flash .syncdot{box-shadow:0 0 0 6px rgba(111,168,60,.22)}
+
+/* ---------- 앱 셸 ---------- */
+.app{display:flex;flex-direction:column;height:100%;min-height:0}
+.topbar{display:flex;align-items:center;gap:9px;padding:10px 12px;border-bottom:1px solid var(--line)}
+.back{flex:none;background:transparent;border:1px solid var(--line-2);border-radius:999px;
+  padding:6px 11px;font-size:11.5px;color:var(--dim);white-space:nowrap}
+.back:hover{color:var(--cream);border-color:var(--gold)}
+.search{position:relative;flex:1;min-width:0}
+.search input{width:100%;background:rgba(0,0,0,.3);border:1px solid var(--line-2);color:var(--cream);
+  border-radius:999px;padding:8px 14px 8px 32px;font-size:13px;outline:none;transition:.18s}
+.search input:focus{border-color:var(--gold);background:rgba(0,0,0,.45)}
+.search input::placeholder{color:rgba(242,236,216,.38)}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);opacity:.5}
+.results{position:absolute;z-index:70;top:calc(100% + 6px);left:0;right:0;background:#132741;
+  border:1px solid var(--line-2);border-radius:10px;max-height:270px;overflow:auto;
+  box-shadow:0 20px 40px -16px rgba(0,0,0,.8)}
+.results:empty{display:none}
+.res{display:flex;align-items:center;gap:9px;padding:9px 12px;border-bottom:1px solid var(--line);cursor:pointer;font-size:13px}
+.res:last-child{border-bottom:0}
+.res:hover{background:rgba(242,204,12,.1)}
+.res .sw{width:4px;height:16px;border-radius:2px;flex:none}
+.res .yr{margin-left:auto;font-family:var(--f-num);font-size:10.5px;color:var(--dim)}
+.res .hit{color:var(--gold)}
+.res small{color:var(--dim);font-size:11px}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:9px 12px;border-bottom:1px solid var(--line);scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;background:transparent;border:1px solid var(--line-2);color:var(--dim);
+  border-radius:999px;padding:5px 11px;font-size:11.5px;white-space:nowrap;transition:.16s}
+.chip[aria-pressed="true"]{color:#16233A;font-weight:600;border-color:transparent}
+.era-sel{flex:none;background:rgba(0,0,0,.3);border:1px solid var(--line-2);color:var(--cream);
+  border-radius:999px;padding:5px 9px;font-size:11.5px;outline:none}
+
+/* ---------- 영상 플레이어 ---------- */
+.vp{background:#0A1728;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.vp-stage{position:relative;aspect-ratio:16/9;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:8px;
+  background:linear-gradient(150deg,color-mix(in srgb,var(--ec) 55%,#0A1728),#0A1728 72%)}
+.vp-stage::after{content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(0deg,rgba(255,255,255,.028) 0 1px,transparent 1px 3px);pointer-events:none}
+.vp-brand{position:absolute;top:9px;left:11px;font-family:var(--f-num);font-size:9px;
+  letter-spacing:.13em;color:rgba(242,236,216,.55)}
+.vp-badge{position:absolute;top:8px;right:10px;background:var(--gold);color:#16233A;font-size:9px;
+  font-weight:700;border-radius:3px;padding:2px 5px;font-family:var(--f-num)}
+.vp-t{font-family:var(--f-disp);font-weight:400;font-size:21px;letter-spacing:-.5px;text-align:center;padding:0 14px}
+.vp-sub{font-size:11px;color:rgba(242,236,216,.65);margin-top:-4px}
+.vp-play{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--cream);
+  background:rgba(10,23,40,.5);font-size:15px;display:flex;align-items:center;justify-content:center;
+  padding-left:2px;transition:.16s;z-index:2}
+.vp-play:hover{background:var(--gold);color:#16233A;border-color:var(--gold)}
+.vp.on .vp-play{padding-left:0}
+.vp-bar{position:relative;height:22px;background:rgba(0,0,0,.4);cursor:pointer}
+.vp-fill{position:absolute;left:0;top:0;bottom:0;background:var(--coral);opacity:.85}
+.vp-bar i{position:absolute;top:0;bottom:0;width:2px;background:rgba(242,236,216,.55);transform:translateX(-1px)}
+.vp-bar i.hit{background:var(--gold);width:3px}
+.vp-cue{display:flex;align-items:center;gap:8px;padding:8px 11px;font-size:11.5px;color:var(--dim);
+  border-top:1px solid var(--line);flex-wrap:wrap}
+.vp-cue time{font-family:var(--f-num);font-size:10.5px}
+.vp-cue b{color:var(--gold);font-weight:600}
+.vp-cue .yt{margin-left:auto;color:var(--dim);text-decoration:none;border-bottom:1px dotted var(--line-2);font-size:10.5px}
+.vp-cue .yt:hover{color:var(--cream)}
+
+/* ---------- PC 본문 ---------- */
+.pc-body{display:grid;grid-template-columns:minmax(0,1fr) 316px;height:886px}
+.tl-wrap{display:flex;min-width:0;overflow:hidden}
+.tl-labels{flex:none;background:#101F36;border-right:1px solid var(--line-2);overflow:hidden}
+.tl-scroll{overflow:auto;position:relative;scrollbar-width:thin;flex:1}
+.tl-scroll::-webkit-scrollbar{height:9px;width:9px}
+.tl-scroll::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:5px}
+.tl-scroll::-webkit-scrollbar-track{background:rgba(0,0,0,.25)}
+.side{border-left:1px solid var(--line);background:rgba(0,0,0,.22);overflow:auto;padding:13px}
+.era-brief{border:1px solid var(--line);border-radius:10px;padding:12px 13px;margin-top:12px;background:rgba(255,255,255,.03)}
+.era-brief h4{margin:0 0 3px;font-family:var(--f-disp);font-weight:400;font-size:17px;letter-spacing:-.4px}
+.era-brief .yr{font-family:var(--f-num);font-size:10.5px;color:var(--gold)}
+.era-brief p{margin:8px 0 0;font-size:12.5px;line-height:1.75;color:rgba(242,236,216,.8)}
+
+/* ---------- 카드 ---------- */
+.card{border:1px solid var(--line-2);border-radius:12px;overflow:hidden;background:#132741;margin-top:12px}
+.card-top{padding:13px 14px 12px;border-bottom:1px solid var(--line);position:relative}
+.card-top::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--gold)}
+.card-kind{font-size:10.5px;letter-spacing:.1em;color:var(--dim);font-family:var(--f-num)}
+.card-name{font-family:var(--f-disp);font-size:22px;line-height:1.15;margin:5px 0 0;font-weight:400;letter-spacing:-.5px}
+.card-yr{font-family:var(--f-num);font-size:12px;color:var(--gold);margin-top:5px}
+.card-rows{padding:3px 14px 11px;margin:0}
+.row{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:12.5px}
+.row:last-child{border-bottom:0}
+.row dt{flex:none;width:62px;color:var(--dim);font-size:11.5px;padding-top:1px}
+.row dd{margin:0;flex:1;line-height:1.6;min-width:0}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags button{background:rgba(242,236,216,.07);border:1px solid var(--line);border-radius:5px;
+  padding:3px 7px;font-size:11px;color:var(--cream);transition:.15s}
+.tags button:hover{border-color:var(--gold);color:var(--gold)}
+.lect{display:inline-flex;align-items:center;gap:6px;background:rgba(111,168,60,.16);
+  border:1px solid rgba(111,168,60,.45);color:#A7D67A;border-radius:6px;padding:4px 9px;font-size:11.5px}
+.empty{padding:26px 14px;text-align:center;color:var(--dim);font-size:12.5px;line-height:1.8}
+.empty b{display:block;font-family:var(--f-disp);font-size:15px;color:var(--line-2);margin-bottom:8px;font-weight:400}
+
+/* ---------- 모바일 ---------- */
+.m-scroll{flex:1;overflow:auto;position:relative;scrollbar-width:none}
+.m-scroll::-webkit-scrollbar{display:none}
+.spine{position:absolute;left:19px;top:0;bottom:0;width:2px;background:var(--line);z-index:0}
+.m-video{padding:10px 12px 0}
+.m-mini{position:absolute;right:9px;bottom:72px;width:150px;z-index:48;border-radius:10px;
+  overflow:hidden;box-shadow:0 14px 30px -10px rgba(0,0,0,.92);
+  opacity:0;transform:translateY(10px) scale(.96);pointer-events:none;
+  transition:opacity .24s,transform .24s}
+.m-mini.show{opacity:1;transform:none;pointer-events:auto}
+.m-mini .vp{border-color:var(--line-2)}
+.m-mini .vp-cue,.m-mini .vp-sub,.m-mini .vp-brand,.m-mini .vp-badge{display:none}
+.m-mini .vp-t{font-size:12.5px}
+.m-mini .vp-play{width:32px;height:32px;font-size:10px;border-width:1.2px}
+.m-mini .vp-bar{height:10px}
+.phone[data-o="land"] .m-mini{display:none}
+.ribbon{padding:9px 0 3px;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
+.ribbon::-webkit-scrollbar{display:none}
+.era-intro{padding:12px 14px 2px}
+.era-intro h3{margin:0;font-family:var(--f-disp);font-weight:400;font-size:19px;letter-spacing:-.5px}
+.era-intro .yr{font-family:var(--f-num);font-size:10.5px;color:var(--gold);margin-top:3px}
+.era-intro p{margin:8px 0 0;font-size:12.5px;line-height:1.7;color:rgba(242,236,216,.78)}
+.era-blk{position:relative;z-index:1}
+.era-head{position:sticky;top:0;z-index:14;display:flex;align-items:center;gap:10px;padding:9px 14px;
+  background:rgba(14,31,56,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.era-dot{width:12px;height:12px;border-radius:50%;flex:none;margin-left:2px;box-shadow:0 0 0 3px var(--ink)}
+.era-head h3{margin:0;font-family:var(--f-disp);font-size:15px;font-weight:400;letter-spacing:-.4px}
+.era-head .er-yr{margin-left:auto;font-family:var(--f-num);font-size:10px;color:var(--dim)}
+.era-items{padding:8px 14px 16px 34px;display:flex;flex-direction:column;gap:6px}
+.mi{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:rgba(255,255,255,.035);
+  border:1px solid var(--line);border-radius:8px;padding:9px 11px;font-size:13px;transition:.16s;position:relative}
+.mi:hover{background:rgba(255,255,255,.07)}
+.mi.on{border-color:var(--gold);background:rgba(242,204,12,.12)}
+.mi.cue{border-color:var(--coral);background:rgba(242,82,96,.14);box-shadow:0 0 0 3px rgba(242,82,96,.14)}
+.mi::before{content:"";position:absolute;left:-16px;top:50%;width:12px;height:1px;background:var(--line)}
+.mi .sw{width:3px;height:18px;border-radius:2px;flex:none}
+.mi .yr{margin-left:auto;font-family:var(--f-num);font-size:10px;color:var(--dim);flex:none}
+.mi .hit{color:var(--gold)}
+.mi.ev .sw{width:7px;height:7px;border-radius:50%}
+.mi .now{font-family:var(--f-num);font-size:9px;background:var(--coral);color:#0E1F38;
+  border-radius:3px;padding:1px 4px;font-weight:600;flex:none}
+
+.sheet-card{position:absolute;left:0;right:0;bottom:0;z-index:50;background:#132741;
+  border-top:1px solid var(--line-2);border-radius:16px 16px 0 0;max-height:70%;
+  transform:translateY(102%);transition:transform .34s cubic-bezier(.32,.72,0,1);
+  box-shadow:0 -20px 50px -20px rgba(0,0,0,.9);display:flex;flex-direction:column}
+.sheet-card.peek{transform:translateY(calc(100% - 60px))}
+.sheet-card.up{transform:translateY(0)}
+.grab{width:38px;height:4px;background:var(--line-2);border-radius:3px;margin:8px auto 0;flex:none}
+.peek-bar{display:flex;align-items:center;gap:9px;width:100%;background:transparent;border:0;
+  padding:11px 14px 13px;font-size:13.5px;text-align:left;flex:none}
+.peek-bar .sw{width:4px;height:18px;border-radius:2px;flex:none}
+.peek-bar .nm{font-weight:600}
+.peek-bar .yr{font-family:var(--f-num);font-size:10.5px;color:var(--dim)}
+.peek-bar .cv{margin-left:auto;color:var(--dim);font-size:11px;flex:none}
+#card-m{overflow:auto;padding:0 0 14px}
+.sheet-card.peek #card-m{opacity:0}
+.sheet-close{position:absolute;right:10px;top:34px;background:transparent;border:0;color:var(--dim);
+  font-size:17px;line-height:1;padding:5px;z-index:2}
+.sheet-card.peek .sheet-close{display:none}
+
+.land{display:none;flex-direction:column;height:100%}
+.phone[data-o="land"] .port{display:none}
+.phone[data-o="land"] .land{display:flex}
+.land-head{display:flex;align-items:center;gap:8px;padding:7px 12px;border-bottom:1px solid var(--line);font-size:11px;color:var(--dim)}
+.land-head b{font-family:var(--f-disp);font-weight:400;font-size:13px;color:var(--cream);letter-spacing:-.3px}
+.land-split{flex:1;display:flex;min-height:0}
+.land-vid{flex:none;width:236px;border-right:1px solid var(--line);padding:8px;overflow:auto}
+.land-vid.hide{display:none}
+.land-body{overflow:auto;flex:1;scrollbar-width:thin}
+.land-body::-webkit-scrollbar{height:6px}
+.land-body::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:4px}
+
+svg text{font-family:var(--f-body)}
+.bar{cursor:pointer}
+.bar rect,.bar circle{transition:opacity .18s}
+.dimmed{opacity:.14}
+
+.notes{margin-top:50px;border-top:1px solid var(--line-2);padding-top:26px;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:26px}
+.note h4{font-family:var(--f-disp);font-weight:400;font-size:15px;margin:0 0 8px;letter-spacing:-.3px}
+.note h4 span{font-family:var(--f-num);font-size:11px;color:var(--gold);margin-right:7px}
+.note p{margin:0;font-size:12.5px;line-height:1.75;color:var(--dim)}
+.note code{font-family:var(--f-num);font-size:11px;background:rgba(0,0,0,.35);padding:1px 5px;border-radius:3px;color:var(--cream)}
+.lect.todo{background:rgba(242,236,216,.06);border-color:var(--line-2);color:var(--dim)}
+.warnchip{display:inline-block;background:rgba(242,82,96,.14);border:1px solid rgba(242,82,96,.5);
+  color:#FFB3BA;border-radius:6px;padding:4px 8px;font-size:11.5px;line-height:1.5}
+.vp-badge.todo{background:transparent;border:1px dashed rgba(242,236,216,.5);color:var(--cream);font-weight:400}
+.qr-card .ev.todo{background:#fff;color:#7A745F;border:1px dashed #B9B29A}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ===== 실사용 모드: 실제 휴대폰·태블릿에서는 목업을 벗고 앱만 전체화면 ===== */
+@media (max-width:820px),(max-height:540px) and (max-width:1100px){
+  body{overflow:hidden}
+  .sheet{padding:0;max-width:none}
+  .sheet-head,.step-h,.book,.notes,.device-cap,.phone-tools,.syncline,.pc{display:none}
+  .step{margin:0}
+  .stage{display:block;gap:0}
+  .phone-wrap{position:static}
+  .phone{position:fixed;inset:0;width:100%!important;max-width:none;margin:0;border:0;
+    border-radius:0;box-shadow:none;height:100vh!important;height:100dvh!important}
+  .phone::before{display:none}
+  .app.port .topbar{padding-top:calc(10px + env(safe-area-inset-top))}
+  .m-mini{bottom:calc(72px + env(safe-area-inset-bottom))}
+  .sheet-card{padding-bottom:env(safe-area-inset-bottom)}
+}
+.real-menu{display:none;position:fixed;left:0;right:0;bottom:0;z-index:80;
+  background:rgba(10,23,40,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line-2);
+  padding:9px 12px calc(9px + env(safe-area-inset-bottom));gap:8px;overflow-x:auto;scrollbar-width:none}
+.real-menu::-webkit-scrollbar{display:none}
+.real-menu button{flex:none;background:transparent;border:1px solid var(--line-2);border-radius:999px;
+  padding:6px 12px;font-size:12px;color:var(--dim);white-space:nowrap}
+.real-menu button[aria-current="true"]{color:#16233A;font-weight:600}
+@media (max-width:820px),(max-height:540px) and (max-width:1100px){.real-menu{display:flex}.m-scroll{padding-bottom:58px}.land-split{padding-bottom:52px}}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="sheet-head">
+    <div class="brandmark">
+      <div class="tag">90일</div>
+      <div>
+        <h1>시간흐름으로 본 신구약 성경의 분류</h1>
+        <p>통큰통독 · 주해홍 — 데이터 검수용 초안 v1 · 147항목</p>
+      </div>
+    </div>
+    <div class="sheet-meta">
+원본 도표의 <b>147개 항목</b>을 옮긴 초안입니다<br>
+      <b>☐ 표시</b>는 아직 제작·확정 전인 항목입니다
+    </div>
+  </div>
+
+  <section class="step">
+    <div class="step-h"><em>STEP 1</em><h2>책에서 시대 도입부의 QR을 찍는다</h2>
+      <span>각 시대 첫 페이지에 들어갈 QR 블록</span></div>
+    <div class="book">
+      <div class="book-h"><b>통큰통독</b><i>시대별 안내 — 스마트폰으로 QR을 찍으면 해설 영상과 연대표가 열립니다</i></div>
+      <div class="qr-row" id="qr-row"></div>
+      <div class="book-foot">QR은 <b>tongdok.kr/e1 … e12</b> 형태의 짧은 주소로 발급합니다. 주소를 리다이렉트로 두면 책을 다시 찍지 않아도 연결 대상을 바꿀 수 있습니다.</div>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="step-h"><em>STEP 2</em><h2>그 시대 화면이 열린다</h2>
+      <span>해설 영상 + 해당 시대로 이동한 연대표</span></div>
+
+    <div class="stage">
+      <div>
+        <div class="device-cap">PC — 같은 주소를 브라우저에서 열었을 때</div>
+        <div class="pc">
+          <div class="pc-bar"><i></i><i></i><i></i><div class="pc-url" id="pc-url"></div></div>
+          <div class="app">
+            <div class="topbar">
+              <button class="back" id="back-pc" hidden>← 전체 연대표</button>
+              <div class="search">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                <input id="q-pc" placeholder="성경책 · 인물 · 사건 검색  (예: 다윗, 바벨론, 출애굽)" autocomplete="off">
+                <div class="results" id="res-pc"></div>
+              </div>
+            </div>
+            <div class="chips" id="chips-pc"></div>
+            <div class="pc-body">
+              <div class="tl-wrap">
+                <div class="tl-labels" id="tl-lab-pc"></div>
+                <div class="tl-scroll" id="tl-pc"></div>
+              </div>
+              <div class="side" id="side-pc"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="phone-wrap">
+        <div class="device-cap">모바일 — QR로 진입한 화면</div>
+        <div class="phone" id="phone" data-o="port">
+          <div class="app port">
+            <div class="topbar" style="padding-top:22px">
+              <button class="back" id="back-m" hidden>←</button>
+              <div class="search">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                <input id="q-m" placeholder="검색" autocomplete="off">
+                <div class="results" id="res-m"></div>
+              </div>
+            </div>
+            <div class="chips" id="chips-m"></div>
+            <div class="m-scroll" id="m-scroll">
+              <div class="spine"></div>
+              <div class="m-video" id="m-video"></div>
+              <div class="ribbon" id="ribbon"></div>
+              <div id="era-intro"></div>
+              <div id="m-list"></div>
+            </div>
+          </div>
+
+          <div class="land">
+            <div class="land-head"><b id="land-t">전체 연대표</b><span>· 두 손가락으로 확대 · 항목을 누르면 카드</span></div>
+            <div class="land-split">
+              <div class="land-vid" id="land-vid"></div>
+              <div class="tl-wrap" style="flex:1">
+                <div class="tl-labels" id="tl-lab-land"></div>
+                <div class="land-body" id="tl-land"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-mini" id="m-mini"></div>
+
+          <div class="sheet-card" id="sheet-m">
+            <div class="grab"></div>
+            <button class="peek-bar" id="peek-m"></button>
+            <button class="sheet-close" id="sheet-x" aria-label="카드 닫기">✕</button>
+            <div id="card-m"></div>
+          </div>
+        </div>
+
+        <div class="phone-tools">
+          <button class="tbtn" id="btn-port" aria-pressed="true">세로</button>
+          <button class="tbtn" id="btn-land" aria-pressed="false">가로 · 전체 연대표</button>
+        </div>
+        <div class="syncline" id="syncline"><span class="syncdot"></span> QR을 눌러 시작하세요</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="notes">
+    <div class="note"><h4><span>01</span>주소 하나가 시대 하나</h4>
+      <p><code>tongdok.kr/e7</code> 같은 짧은 주소를 시대마다 하나씩 발급하고, 그 주소가 <code>통큰통독.com/t/e7</code>로 넘어가게 둡니다. 링크를 갈아끼워도 책은 그대로 씁니다.</p></div>
+    <div class="note"><h4><span>02</span>영상이 표를 끌고 간다</h4>
+      <p>영상에 구간 표시(챕터)를 심어두면, 해설이 아브라함을 말할 때 표에서도 아브라함이 켜집니다. 영상과 표를 따로 보는 게 아니라 한 화면에서 같이 움직입니다.</p></div>
+    <div class="note"><h4><span>03</span>스크롤하면 영상은 작아진다</h4>
+      <p>표를 내려 볼 때 영상이 위로 사라지면 흐름이 끊깁니다. 일정 지점부터 오른쪽 아래 작은 창으로 접히고, 소리와 진행은 계속됩니다.</p></div>
+    <div class="note"><h4><span>04</span>인쇄 QR 사양</h4>
+      <p>29×29 모듈, 오류정정 M 기준. 책 페이지에는 <b>한 변 18~20mm</b>가 적정이고, 사방 4모듈 여백과 밝은 바탕을 지켜야 합니다. 코드 아래에 시대 이름을 함께 적어 두면 스캔 없이도 무엇인지 알 수 있습니다.</p></div>
+  </div>
+</div>
+
+<nav class="real-menu" id="real-menu" aria-label="시대 선택"></nav>
+
+<script>
+/* ===== 데이터 — 검수용 초안 v1 (원본 도표 판독) ===== */
+const ERAS=[{"id":"e1","n":"창조시대","s":-4000,"e":-2166,"c":"#7E5A8F","lab":"연대 미표기 – BC 2166","sl":"창조"},{"id":"e2","n":"족장시대","s":-2166,"e":-1805,"c":"#B24F79","lab":"BC 2166 – 1805","sl":null},{"id":"e3","n":"출애굽·광야시대","s":-1805,"e":-1405,"c":"#D0536A","lab":"BC 1805 – 1405","sl":null},{"id":"e4","n":"가나안정복시대","s":-1405,"e":-1362,"c":"#DE6459","lab":"BC 1405 – 1362","sl":null},{"id":"e5","n":"사사시대","s":-1362,"e":-1051,"c":"#E07A4B","lab":"BC 1362 – 1051","sl":null},{"id":"e6","n":"통일왕국시대","s":-1051,"e":-931,"c":"#DE913C","lab":"BC 1051 – 931","sl":null},{"id":"e7","n":"분열왕국시대","s":-931,"e":-605,"c":"#CFA334","lab":"BC 931 – 605","sl":null},{"id":"e8","n":"포로시대","s":-605,"e":-538,"c":"#A08B3E","lab":"BC 605 – 538","sl":null},{"id":"e9","n":"귀환시대","s":-538,"e":-331,"c":"#7B8B49","lab":"BC 538 – 331","sl":null},{"id":"e10","n":"중간시대","s":-331,"e":-5,"c":"#4C6B5C","lab":"BC 331 – BC 5/4","sl":null},{"id":"e11","n":"복음시대","s":-5,"e":30,"c":"#2C7C74","lab":"BC 5/4 – AD 30","sl":null},{"id":"e12","n":"교회시대","s":30,"e":100,"c":"#2E6FA6","lab":"AD 30 – 100","sl":null}];
+const CATS={
+ hist :{n:'역사서',lane:'L1',c:'#B98A47'}, poet :{n:'시가서',lane:'L2',c:'#D8A55E'},
+ major:{n:'대선지서',lane:'L3',c:'#8E4A5C'}, minor:{n:'소선지서',lane:'L3',c:'#B0687A'},
+ gosp :{n:'복음서·사도행전',lane:'L1',c:'#2C7C74'}, paul :{n:'바울서신',lane:'L2',c:'#3E86B5'},
+ gen  :{n:'공동서신',lane:'L3',c:'#5A9E5A'}, ev   :{n:'주요사건',lane:'L4',c:'#F25260'},
+ period:{n:'시기 구간',lane:'L4',c:'#8C6A9E'}, world:{n:'국가·주변역사',lane:'L5',c:'#6B7C93'}
+};
+const LANES=[
+ {id:'L1',n:'역사서',sub:'복음서·사도행전',sh:'역사서'},
+ {id:'L2',n:'시가서',sub:'바울서신',sh:'시가서'},
+ {id:'L3',n:'예언서',sub:'공동서신',sh:'예언서'},
+ {id:'L4',n:'주요사건',sub:'시기 구간',sh:'사건'},
+ {id:'L5',n:'국가·주변역사',sub:'',sh:'세계사'}
+];
+const FILTERS=[
+ {k:'hist',n:'역사서'},{k:'poet',n:'시가서'},{k:'proph',n:'예언서',cats:['major','minor']},
+ {k:'gosp',n:'복음서·행전'},{k:'epis',n:'서신서',cats:['paul','gen']},
+ {k:'ev',n:'주요사건',cats:['ev','period']},{k:'world',n:'세계사'}
+];
+const RAWITEMS=[{"name":"창세기","cat":"hist","s":-4000,"e":-1805,"lab":"창조 – BC 1805","sl":"창조–","ref":"창 1–50","tags":["아담·하와","노아","아브라함","이삭","야곱","요셉","창조","홍수","바벨탑"],"desc":"천지창조에서 요셉의 죽음까지. 하나님 나라의 시작과 족장 가문의 이야기.","warn":null},{"name":"출애굽기","cat":"hist","s":-1526,"e":-1445,"lab":"BC 1526 – 1445","sl":"BC 1526","ref":"출 1–40","tags":["모세","아론","바로","유월절","홍해","십계명","성막"],"desc":"애굽의 종살이에서 벗어나 시내산에서 언약 백성이 되기까지.","warn":"막대 시작점"},{"name":"레위기","cat":"hist","s":-1445,"e":-1444,"lab":"BC 1445","sl":"BC 1445","ref":"레 1–27","tags":["제사","절기","정결법","대속죄일"],"desc":"거룩하신 하나님과 함께 사는 법. 제사와 절기 규례.","warn":null},{"name":"민수기","cat":"hist","s":-1445,"e":-1405,"lab":"BC 1445 – 1405","sl":"BC 1445","ref":"민 1–36","tags":["광야","인구조사","가데스바네아","불뱀","발람"],"desc":"광야 40년. 두 번의 인구조사 사이에 놓인 순종과 불순종의 기록.","warn":null},{"name":"신명기","cat":"hist","s":-1405,"e":-1405,"lab":"BC 1405","sl":"BC 1405","ref":"신 1–34","tags":["모세","언약갱신","쉐마","모압평지"],"desc":"가나안 입성 직전, 모세가 새 세대에게 다시 들려주는 언약.","warn":null},{"name":"여호수아","cat":"hist","s":-1405,"e":-1390,"lab":"BC 1405 – 1390","sl":"BC 1405","ref":"수 1–24","tags":["여호수아","여리고","아이성","땅분배","기브온"],"desc":"요단을 건너 가나안을 정복하고 지파별로 땅을 나눈 기록.","warn":null},{"name":"사사기","cat":"hist","s":-1362,"e":-1051,"lab":"BC 1362 – 1051","sl":"BC 1362","ref":"삿 1–21","tags":["기드온","삼손","드보라","입다","옷니엘"],"desc":"왕이 없어 각기 소견에 옳은 대로 행하던 시대의 순환.","warn":null},{"name":"룻기","cat":"hist","s":-1150,"e":-1100,"lab":"BC 1150 – 1100","sl":"BC 1150","ref":"룻 1–4","tags":["룻","나오미","보아스","베들레헴"],"desc":"사사시대 한복판에서 이어진 다윗 가문의 계보.","warn":"연대"},{"name":"사무엘상·하","cat":"hist","s":-1051,"e":-971,"lab":"BC 1051 – 971","sl":"BC 1051","ref":"삼상·삼하","tags":["사무엘","사울","다윗","골리앗","요나단","밧세바"],"desc":"마지막 사사에서 첫 왕으로, 그리고 다윗 왕조의 시작.","warn":null},{"name":"열왕기 상","cat":"hist","s":-971,"e":-853,"lab":"BC 971 – 853","sl":"BC 971","ref":"왕상 1–22","tags":["솔로몬","성전","르호보암","여로보암","엘리야","아합"],"desc":"솔로몬의 영광과 왕국 분열, 그리고 엘리야.","warn":"막대 끝점"},{"name":"열왕기 하","cat":"hist","s":-853,"e":-586,"lab":"BC 853 – 586","sl":"BC 853","ref":"왕하 1–25","tags":["엘리사","히스기야","요시야","사마리아","예루살렘함락"],"desc":"두 왕국이 각각 무너지기까지의 내리막길.","warn":null},{"name":"역대 상·하","cat":"hist","s":-1010,"e":-538,"lab":"BC 1010 – 538","sl":"BC 1010","ref":"대상·대하","tags":["다윗","성전","레위인","족보","고레스"],"desc":"포로에서 돌아온 세대를 위해 다시 쓴 성전 중심의 역사. 앞부분 족보는 아담부터(원본 점선).","warn":null},{"name":"에스라","cat":"hist","s":-538,"e":-457,"lab":"BC 538 – 457","sl":"BC 538","ref":"스 1–10","tags":["스룹바벨","에스라","성전재건","고레스칙령"],"desc":"1·2차 귀환과 성전 재건, 그리고 말씀으로의 개혁.","warn":null},{"name":"느헤미야","cat":"hist","s":-445,"e":-425,"lab":"BC 445 – 425","sl":"BC 445","ref":"느 1–13","tags":["느헤미야","성벽","아닥사스다","산발랏"],"desc":"무너진 예루살렘 성벽을 52일 만에 다시 세운 기록.","warn":null},{"name":"에스더","cat":"hist","s":-483,"e":-473,"lab":"BC 483 – 473","sl":"BC 483","ref":"에 1–10","tags":["에스더","모르드개","하만","부림절","아하수에로"],"desc":"페르시아에 남은 유다인을 지키신 숨은 손길.","warn":null},{"name":"욥기","cat":"poet","s":-1900,"e":-1900,"lab":"족장시대","sl":"족장시대","ref":"욥 1–42","tags":["욥","엘리후","고난","사탄"],"desc":"족장시대를 배경으로 한, 고난을 향한 가장 오래된 질문.","warn":"연대"},{"name":"시편","cat":"poet","s":-1010,"e":-430,"lab":"BC 1010 – 430","sl":"BC 1010","ref":"시 1–150","tags":["다윗","아삽","고라자손","찬양","탄식"],"desc":"천 년에 걸쳐 쌓인 이스라엘의 기도와 노래 150편.","warn":"막대 끝점"},{"name":"잠언","cat":"poet","s":-971,"e":-931,"lab":"BC 971 – 931","sl":"BC 971","ref":"잠 1–31","tags":["솔로몬","지혜","아굴","르무엘"],"desc":"하나님을 경외하는 데서 시작하는 일상의 지혜.","warn":null},{"name":"전도서","cat":"poet","s":-935,"e":-935,"lab":"BC 935","sl":"BC 935","ref":"전 1–12","tags":["솔로몬","헛되다","해 아래"],"desc":"해 아래 모든 것을 겪어본 자의 결론.","warn":null},{"name":"아가서","cat":"poet","s":-965,"e":-965,"lab":"BC 965","sl":"BC 965","ref":"아 1–8","tags":["솔로몬","술람미"],"desc":"사랑을 노래한 시. 하나님과 백성의 관계로도 읽힌다.","warn":null},{"name":"이사야","cat":"major","s":-740,"e":-680,"lab":"BC 740 – 680","sl":"BC 740","ref":"사 1–66","tags":["웃시야","히스기야","임마누엘","고난의 종"],"desc":"심판과 위로, 그리고 오실 메시아를 가장 멀리 내다본 책.","warn":null},{"name":"예레미야","cat":"major","s":-627,"e":-580,"lab":"BC 627 – 580","sl":"BC 627","ref":"렘 1–52","tags":["예레미야","토기장이","새 언약","바룩"],"desc":"무너지는 나라 곁을 끝까지 지킨 눈물의 선지자.","warn":null},{"name":"예레미야애가","cat":"major","s":-586,"e":-586,"lab":"BC 586","sl":"BC 586","ref":"애 1–5","tags":["예루살렘","폐허","긍휼"],"desc":"무너진 예루살렘을 앞에 두고 부른 다섯 편의 조가.","warn":null},{"name":"에스겔","cat":"major","s":-593,"e":-571,"lab":"BC 593 – 571","sl":"BC 593","ref":"겔 1–48","tags":["그발강","마른 뼈","새 성전","파수꾼"],"desc":"포로 중에 본 하나님의 영광과 회복의 환상.","warn":null},{"name":"다니엘","cat":"major","s":-605,"e":-535,"lab":"BC 605 – 535","sl":"BC 605","ref":"단 1–12","tags":["다니엘","느부갓네살","사자굴","풀무불","환상"],"desc":"포로지 한복판에서 세계 역사의 주인을 증언한다.","warn":null},{"name":"요나","cat":"minor","s":-780,"e":-780,"lab":"BC 780","sl":"BC 780","ref":"욘 1–4","tags":["요나","니느웨","큰 물고기"],"desc":"이방 성읍을 향한 하나님의 긍휼과 선지자의 반발.","warn":null},{"name":"아모스","cat":"minor","s":-760,"e":-760,"lab":"BC 760","sl":"BC 760","ref":"암 1–9","tags":["드고아","공의","북이스라엘"],"desc":"풍요 속 북이스라엘을 향한 공의의 외침.","warn":null},{"name":"호세아","cat":"minor","s":-750,"e":-715,"lab":"BC 750 – 715","sl":"BC 750","ref":"호 1–14","tags":["고멜","음란","언약사랑"],"desc":"배신한 아내를 다시 찾는 사랑으로 그린 하나님의 마음.","warn":null},{"name":"미가","cat":"minor","s":-735,"e":-700,"lab":"BC 735 – 700","sl":"BC 735","ref":"미 1–7","tags":["베들레헴","정의","겸손"],"desc":"권력의 부패를 꾸짖고 베들레헴을 예고한다.","warn":null},{"name":"나훔","cat":"minor","s":-650,"e":-650,"lab":"BC 650","sl":"BC 650","ref":"나 1–3","tags":["니느웨","앗수르"],"desc":"요나 이후 백여 년, 니느웨에 내려진 최후 통첩.","warn":null},{"name":"스바냐","cat":"minor","s":-630,"e":-630,"lab":"BC 630","sl":"BC 630","ref":"습 1–3","tags":["요시야","여호와의 날","남은 자"],"desc":"요시야 개혁기, 여호와의 날과 남은 자의 소망.","warn":null},{"name":"하박국","cat":"minor","s":-607,"e":-607,"lab":"BC 607","sl":"BC 607","ref":"합 1–3","tags":["왜","의인은 믿음으로"],"desc":"왜 악인이 형통한가를 묻고 믿음으로 답을 얻다.","warn":null},{"name":"오바댜","cat":"minor","s":-586,"e":-586,"lab":"BC 586","sl":"BC 586","ref":"옵 1","tags":["에돔","형제"],"desc":"형제의 재난을 방관한 에돔을 향한 가장 짧은 예언.","warn":null},{"name":"학개","cat":"minor","s":-520,"e":-520,"lab":"BC 520","sl":"BC 520","ref":"학 1–2","tags":["성전재건","스룹바벨","여호수아"],"desc":"멈춘 성전 공사를 다시 일으킨 넉 달간의 말씀.","warn":null},{"name":"스가랴","cat":"minor","s":-520,"e":-480,"lab":"BC 520 – 480","sl":"BC 520","ref":"슥 1–14","tags":["환상","메시아","나귀"],"desc":"여덟 환상으로 성전 너머 메시아를 바라본다.","warn":null},{"name":"말라기","cat":"minor","s":-430,"e":-430,"lab":"BC 430","sl":"BC 430","ref":"말 1–4","tags":["십일조","엘리야","신실"],"desc":"구약의 마지막 목소리. 이후 사백 년의 침묵.","warn":null},{"name":"요엘","cat":"minor","s":-500,"e":-500,"lab":"BC 500","sl":"BC 500","ref":"욜 1–3","tags":["메뚜기","여호와의 날","성령"],"desc":"메뚜기 재앙에서 여호와의 날과 성령 부으심을 본다.","warn":"원본이 말라기 인근(포로기 이후)에 배치 — 연대 확정 필요"},{"name":"마태복음","cat":"gosp","s":61,"e":70,"lab":"AD 61 – 70 기록","sl":"AD 61","ref":"마 1–28","tags":["마태","산상수훈","왕","다윗의 자손"],"desc":"약속된 왕으로 오신 예수를 유대인에게 증언한다.","warn":null},{"name":"마가복음","cat":"gosp","s":61,"e":70,"lab":"AD 61 – 70 기록","sl":"AD 61","ref":"막 1–16","tags":["마가","베드로","종"],"desc":"가장 짧고 빠른 복음서. 섬기러 오신 종의 기록.","warn":null},{"name":"누가복음","cat":"gosp","s":61,"e":70,"lab":"AD 61 – 70 기록","sl":"AD 61","ref":"눅 1–24","tags":["누가","데오빌로","탕자","사마리아인"],"desc":"의사 누가가 차례대로 살펴 기록한 인자의 생애.","warn":null},{"name":"요한복음","cat":"gosp","s":61,"e":70,"lab":"AD 61 – 70 기록","sl":"AD 61","ref":"요 1–21","tags":["말씀","표적","나는 ~이다"],"desc":"하나님의 아들 되심을 믿게 하려고 쓴 마지막 복음서.","warn":null},{"name":"사도행전","cat":"gosp","s":30,"e":62,"lab":"AD 30 – 62","sl":"AD 30","ref":"행 1–28","tags":["오순절","베드로","바울","성령","전도여행"],"desc":"예루살렘에서 로마까지, 교회가 퍼져나간 삼십 년.","warn":null},{"name":"갈라디아서","cat":"paul","s":48,"e":48,"lab":"AD 48","sl":"AD 48","ref":"갈 1–6","tags":["할례","자유","율법"],"desc":"복음에 무엇도 더할 수 없다는 단호한 선언.","warn":null},{"name":"데살로니가전서","cat":"paul","s":50,"e":50,"lab":"AD 50","sl":"AD 50","ref":"살전 1–5","tags":["재림","주의 날","데살로니가"],"desc":"재림을 기다리는 이들에게 준 첫 편지.","warn":null},{"name":"데살로니가후서","cat":"paul","s":51,"e":51,"lab":"AD 51","sl":"AD 51","ref":"살후 1–3","tags":["재림","일하라","불법의 사람"],"desc":"오해를 바로잡고 일상을 지키라 권한다.","warn":null},{"name":"고린도전서","cat":"paul","s":55,"e":55,"lab":"AD 55","sl":"AD 55","ref":"고전 1–16","tags":["분쟁","은사","사랑장","부활"],"desc":"문제 많은 교회에 보낸 가장 실제적인 답장.","warn":null},{"name":"고린도후서","cat":"paul","s":56,"e":56,"lab":"AD 56","sl":"AD 56","ref":"고후 1–13","tags":["약함","질그릇","연보"],"desc":"약함 속에 온전해지는 은혜를 변호한 편지.","warn":null},{"name":"로마서","cat":"paul","s":57,"e":57,"lab":"AD 57","sl":"AD 57","ref":"롬 1–16","tags":["이신칭의","아담","이스라엘"],"desc":"복음이 무엇인지 가장 체계적으로 풀어낸 대작.","warn":null},{"name":"에베소서","cat":"paul","s":60,"e":60,"lab":"AD 60","sl":"AD 60","ref":"엡 1–6","tags":["교회","전신갑주","하나됨"],"desc":"그리스도의 몸 된 교회를 그린 옥중서신.","warn":null},{"name":"빌립보서","cat":"paul","s":61,"e":61,"lab":"AD 61","sl":"AD 61","ref":"빌 1–4","tags":["기쁨","비움","낮아지심"],"desc":"감옥에서 쓴, 그러나 기쁨이 넘치는 편지.","warn":null},{"name":"골로새서","cat":"paul","s":61,"e":61,"lab":"AD 61","sl":"AD 61","ref":"골 1–4","tags":["그리스도의 충만","머리"],"desc":"그리스도가 만물의 머리 되심을 못 박는다.","warn":null},{"name":"빌레몬서","cat":"paul","s":61,"e":61,"lab":"AD 61","sl":"AD 61","ref":"몬 1","tags":["오네시모","종","형제"],"desc":"도망친 종을 형제로 받아 달라는 사적인 부탁.","warn":null},{"name":"디모데전서","cat":"paul","s":63,"e":63,"lab":"AD 63","sl":"AD 63","ref":"딤전 1–6","tags":["디모데","장로","직분"],"desc":"교회를 어떻게 세울지 후배에게 남긴 지침.","warn":null},{"name":"디도서","cat":"paul","s":63,"e":63,"lab":"AD 63","sl":"AD 63","ref":"딛 1–3","tags":["디도","그레데","선한 일"],"desc":"그레데 교회를 정돈하라는 실무 지침.","warn":null},{"name":"디모데후서","cat":"paul","s":66,"e":66,"lab":"AD 66","sl":"AD 66","ref":"딤후 1–4","tags":["달려갈 길","말씀 전파"],"desc":"순교를 앞두고 쓴 바울의 마지막 편지.","warn":null},{"name":"야고보서","cat":"gen","s":45,"e":45,"lab":"AD 45","sl":"AD 45","ref":"약 1–5","tags":["야고보","행함","혀"],"desc":"믿음은 행함으로 드러난다고 못 박은 실천의 편지.","warn":null},{"name":"베드로전서","cat":"gen","s":64,"e":64,"lab":"AD 64","sl":"AD 64","ref":"벧전 1–5","tags":["고난","나그네","산 소망"],"desc":"박해 앞에 선 성도에게 준 살아 있는 소망.","warn":null},{"name":"베드로후서","cat":"gen","s":66,"e":66,"lab":"AD 66","sl":"AD 66","ref":"벧후 1–3","tags":["거짓 교사","재림","경계"],"desc":"안에서 자라난 거짓 가르침을 향한 경고.","warn":null},{"name":"유다서","cat":"gen","s":66,"e":66,"lab":"AD 66","sl":"AD 66","ref":"유 1","tags":["거짓 교사","믿음의 도"],"desc":"단번에 주신 믿음의 도를 위해 싸우라.","warn":null},{"name":"히브리서","cat":"gen","s":68,"e":68,"lab":"AD 60년대 후반","sl":"AD 60년대 후반","ref":"히 1–13","tags":["대제사장","믿음장","더 나은"],"desc":"예수께서 모든 면에서 더 나으심을 논증한다.","warn":null},{"name":"요한1서","cat":"gen","s":90,"e":90,"lab":"AD 90","sl":"AD 90","ref":"요일 1–5","tags":["사랑","빛","진리"],"desc":"하나님은 사랑이시라. 짧고 깊은 서신.","warn":null},{"name":"요한2서","cat":"gen","s":90,"e":90,"lab":"AD 90","sl":"AD 90","ref":"요이 1","tags":["진리","미혹"],"desc":"진리 안에서 행하라는 짧은 당부.","warn":null},{"name":"요한3서","cat":"gen","s":90,"e":90,"lab":"AD 90","sl":"AD 90","ref":"요삼 1","tags":["가이오","디오드레베"],"desc":"섬기는 이와 군림하는 이를 나란히 보여준다.","warn":null},{"name":"요한계시록","cat":"gen","s":95,"e":95,"lab":"AD 95","sl":"AD 95","ref":"계 1–22","tags":["밧모섬","일곱 교회","어린 양","새 하늘과 새 땅"],"desc":"박해의 끝에서 본 마지막 승리와 새 하늘과 새 땅.","warn":null},{"name":"창조","cat":"ev","s":-4000,"e":-4000,"lab":"연대 미표기","sl":"연대 미표기","ref":"창 1–2","tags":["창조","에덴","아담","하와"],"desc":"말씀으로 지으시고, 보시기에 심히 좋았더라.","warn":null},{"name":"타락","cat":"ev","s":-3900,"e":-3900,"lab":"연대 미표기","sl":"연대 미표기","ref":"창 3","tags":["선악과","뱀","실낙원"],"desc":"불순종으로 갈라진 관계, 그리고 첫 복음의 약속.","warn":null},{"name":"홍수","cat":"ev","s":-3400,"e":-3400,"lab":"연대 미표기","sl":"연대 미표기","ref":"창 6–9","tags":["노아","방주","무지개"],"desc":"심판 가운데 남기신 한 가정과 무지개 언약.","warn":null},{"name":"바벨탑","cat":"ev","s":-2600,"e":-2600,"lab":"연대 미표기","sl":"연대 미표기","ref":"창 11","tags":["시날","언어","흩어짐"],"desc":"하늘에 닿으려던 이름 내기, 그리고 흩어짐.","warn":null},{"name":"에덴","cat":"ev","s":-4000,"e":-4000,"lab":"도표 시작점","sl":"도표 시작점","ref":"창 2","tags":["에덴","동산"],"desc":"원본 도표의 왼쪽 시작 지점.","warn":null},{"name":"아브라함의 탄생","cat":"ev","s":-2166,"e":-2166,"lab":"BC 2166","sl":"BC 2166","ref":"창 11:26","tags":["아브라함","갈대아 우르"],"desc":"갈대아 우르에서 시작된 부르심의 첫 사람.","warn":null},{"name":"아브라함이 우르를 떠남","cat":"ev","s":-2091,"e":-2091,"lab":"BC 2091","sl":"BC 2091","ref":"창 12:1","tags":["아브라함","하란","언약"],"desc":"고향과 친척을 떠나라는 명령과 큰 민족의 약속.","warn":null},{"name":"야곱가족 애굽이민","cat":"ev","s":-1876,"e":-1876,"lab":"BC 1876","sl":"BC 1876","ref":"창 46","tags":["야곱","요셉","고센","칠십 인"],"desc":"기근을 피해 일흔 명이 애굽으로 내려가다.","warn":null},{"name":"요셉이 죽음","cat":"ev","s":-1805,"e":-1805,"lab":"BC 1805","sl":"BC 1805","ref":"창 50:26","tags":["요셉"],"desc":"족장시대의 끝. 사백 년 침묵의 시작.","warn":null},{"name":"모세의 탄생","cat":"ev","s":-1527,"e":-1527,"lab":"BC 1527","sl":"BC 1527","ref":"출 2:2","tags":["모세","갈대상자","바로의 딸"],"desc":"나일강 갈대상자에서 건져진 아이.","warn":null},{"name":"출애굽","cat":"ev","s":-1446,"e":-1446,"lab":"BC 1446","sl":"BC 1446","ref":"출 12","tags":["유월절","홍해","장자"],"desc":"유월절 밤, 사백삼십 년 만의 탈출.","warn":null},{"name":"시내산계약 십계명","cat":"ev","s":-1446,"e":-1446,"lab":"BC 1446","sl":"BC 1446","ref":"출 19–24","tags":["십계명","언약","시내산"],"desc":"한 무리의 노예가 언약 백성이 된 자리.","warn":null},{"name":"성막","cat":"ev","s":-1445,"e":-1445,"lab":"BC 1445","sl":"BC 1445","ref":"출 25–40","tags":["성막","법궤","임재"],"desc":"하나님이 백성 가운데 거하시는 처소.","warn":null},{"name":"가나안 정복","cat":"ev","s":-1405,"e":-1405,"lab":"BC 1405","sl":"BC 1405","ref":"수 3–6","tags":["요단강","여리고","여호수아"],"desc":"요단을 건너 여리고 성이 무너지다.","warn":null},{"name":"세겜에서 언약갱신 · 여호수아 죽음","cat":"ev","s":-1390,"e":-1390,"lab":"BC 1390","sl":"BC 1390","ref":"수 24","tags":["세겜","언약갱신","여호수아"],"desc":"오직 나와 내 집은 여호와를 섬기겠노라.","warn":null},{"name":"해양민족(블레셋) 동지중해 침입","cat":"ev","s":-1200,"e":-1200,"lab":"BC 1200년경","sl":"BC 1200년경","ref":"—","tags":["블레셋","해양민족"],"desc":"사사시대 후반 이스라엘의 최대 위협이 등장하다.","warn":null},{"name":"사무엘의 탄생","cat":"ev","s":-1091,"e":-1091,"lab":"BC 1091","sl":"BC 1091","ref":"삼상 1","tags":["사무엘","한나","실로"],"desc":"기도로 얻은 아들, 마지막 사사가 되다.","warn":null},{"name":"사울 즉위","cat":"ev","s":-1050,"e":-1050,"lab":"BC 1050","sl":"BC 1050","ref":"삼상 10","tags":["사울","사무엘","기름부음"],"desc":"백성이 요구한 왕, 이스라엘의 첫 왕정.","warn":null},{"name":"다윗 즉위","cat":"ev","s":-1010,"e":-1010,"lab":"BC 1010","sl":"BC 1010","ref":"삼하 5","tags":["다윗","헤브론","예루살렘"],"desc":"헤브론에서 시작해 예루살렘을 수도로 삼다.","warn":null},{"name":"솔로몬 즉위","cat":"ev","s":-970,"e":-970,"lab":"BC 970","sl":"BC 970","ref":"왕상 1–3","tags":["솔로몬","지혜","기브온"],"desc":"일천 번제와 지혜를 구한 기도.","warn":null},{"name":"솔로몬의 죽음과 왕국의 분열","cat":"ev","s":-931,"e":-931,"lab":"BC 931","sl":"BC 931","ref":"왕상 12","tags":["르호보암","여로보암","세겜"],"desc":"한 나라가 북이스라엘과 남유다로 갈라지다.","warn":null},{"name":"엘리야, 엘리사의 활약","cat":"ev","s":-876,"e":-796,"lab":"BC 876 – 796","sl":"BC 876","ref":"왕상 17–왕하 13","tags":["엘리야","엘리사","갈멜산"],"desc":"바알과 맞선 두 선지자의 시대.","warn":null},{"name":"아합과 이세벨이 바알숭배 강요","cat":"ev","s":-874,"e":-874,"lab":"BC 874","sl":"BC 874","ref":"왕상 16","tags":["아합","이세벨","바알"],"desc":"북왕국이 바알 숭배로 기울다.","warn":null},{"name":"북왕국 오므리 사마리아를 수도로 정함","cat":"ev","s":-870,"e":-870,"lab":"BC 870","sl":"BC 870","ref":"왕상 16:24","tags":["오므리","사마리아"],"desc":"북왕국의 새 수도가 세워지다.","warn":null},{"name":"히스기야의 종교개혁","cat":"ev","s":-728,"e":-728,"lab":"BC 728","sl":"BC 728","ref":"왕하 18","tags":["히스기야","산당","유월절"],"desc":"남유다의 대대적인 신앙 회복.","warn":null},{"name":"북왕국이 앗수르에 멸망","cat":"ev","s":-722,"e":-722,"lab":"BC 722","sl":"BC 722","ref":"왕하 17","tags":["앗수르","사마리아","호세아"],"desc":"이백 년 북왕국이 앗수르에 무너지다.","warn":null},{"name":"요시야의 개혁","cat":"ev","s":-622,"e":-622,"lab":"BC 622","sl":"BC 622","ref":"왕하 22–23","tags":["요시야","율법책","성전수리"],"desc":"성전에서 발견된 율법책이 불러온 개혁.","warn":null},{"name":"1차포로 (다니엘) 잡혀감","cat":"ev","s":-605,"e":-605,"lab":"BC 605","sl":"BC 605","ref":"단 1","tags":["느부갓네살","다니엘","여호야김"],"desc":"다니엘과 세 친구가 끌려간 첫 포로.","warn":null},{"name":"2차포로 (에스겔) 잡혀감","cat":"ev","s":-597,"e":-597,"lab":"BC 597","sl":"BC 597","ref":"왕하 24","tags":["여호야긴","에스겔"],"desc":"왕과 기술자들이 함께 끌려가다.","warn":null},{"name":"3차포로 · 성전파괴 · 유다멸망","cat":"ev","s":-586,"e":-586,"lab":"BC 586","sl":"BC 586","ref":"왕하 25","tags":["시드기야","바벨론","성전"],"desc":"성전과 성벽이 불타고 남유다가 끝나다.","warn":null},{"name":"고레스 칙령","cat":"ev","s":-538,"e":-538,"lab":"BC 538","sl":"BC 538","ref":"스 1","tags":["고레스","페르시아","귀환"],"desc":"칠십 년 만에 열린 귀환의 길.","warn":null},{"name":"스룹바벨 1차귀환 (성전재건)","cat":"ev","s":-536,"e":-536,"lab":"BC 536","sl":"BC 536","ref":"스 2–6","tags":["스룹바벨","성전재건"],"desc":"첫 무리가 돌아와 성전 기초를 놓다.","warn":null},{"name":"에스더 왕비","cat":"ev","s":-479,"e":-479,"lab":"BC 479","sl":"BC 479","ref":"에 2","tags":["에스더","아하수에로","모르드개"],"desc":"페르시아 왕궁에 세워진 유다인 왕비.","warn":null},{"name":"2차귀환 (에스라)","cat":"ev","s":-458,"e":-458,"lab":"BC 458","sl":"BC 458","ref":"스 7","tags":["에스라","율법","아닥사스다"],"desc":"말씀을 들고 돌아온 학자 겸 제사장.","warn":null},{"name":"3차귀환 (느헤미야 성벽재건)","cat":"ev","s":-444,"e":-444,"lab":"BC 444","sl":"BC 444","ref":"느 6:15","tags":["느헤미야","성벽","52일"],"desc":"오십이 일 만에 다시 선 성벽.","warn":null},{"name":"공자·석가·소크라테스 탄생","cat":"ev","s":-530,"e":-400,"lab":"BC 6~4세기","sl":"BC 6~4세기","ref":"—","tags":["공자","석가","소크라테스"],"desc":"같은 시기 동서양에서 인류의 스승들이 태어나다.","warn":null},{"name":"알렉산더 대왕","cat":"ev","s":-334,"e":-334,"lab":"BC 334","sl":"BC 334","ref":"중간사","tags":["알렉산더","헬라","마케도니아"],"desc":"동방 원정으로 헬라 시대가 열리다.","warn":null},{"name":"70인역 출간","cat":"ev","s":-260,"e":-260,"lab":"BC 260","sl":"BC 260","ref":"중간사","tags":["70인역","헬라어","알렉산드리아"],"desc":"구약이 헬라어로 번역되어 복음의 길을 예비하다.","warn":null},{"name":"마카비 반란","cat":"ev","s":-166,"e":-166,"lab":"BC 166","sl":"BC 166","ref":"중간사","tags":["마카비","안티오쿠스","헬라"],"desc":"성전을 더럽힌 헬라 통치에 맞선 봉기.","warn":null},{"name":"하누카 성전 청결","cat":"ev","s":-165,"e":-165,"lab":"BC 165","sl":"BC 165","ref":"중간사","tags":["하누카","수전절","성전"],"desc":"다시 정결하게 된 성전, 수전절의 기원.","warn":null},{"name":"예수님 탄생","cat":"ev","s":-5,"e":-5,"lab":"BC 5","sl":"BC 5","ref":"눅 2","tags":["예수","베들레헴","마리아","요셉"],"desc":"말씀이 육신이 되어 오신 그 밤.","warn":null},{"name":"공생애 시작","cat":"ev","s":26,"e":26,"lab":"AD 26","sl":"AD 26","ref":"마 3–4","tags":["세례요한","요단강","광야시험"],"desc":"요단강 세례와 사십 일 시험 이후 시작된 사역.","warn":null},{"name":"십자가 · 부활 · 승천","cat":"ev","s":30,"e":30,"lab":"AD 30","sl":"AD 30","ref":"눅 23–24","tags":["골고다","무덤","사흘","감람산"],"desc":"성경 전체가 향해 온 단 하나의 사건.","warn":"AD 30은 복음시대·교회시대 경계 — 어느 시대에 넣을지 확정 필요"},{"name":"성령강림","cat":"ev","s":30,"e":30,"lab":"AD 30","sl":"AD 30","ref":"행 2","tags":["성령","베드로","삼천 명","오순절"],"desc":"교회가 태어난 날. 마가의 다락방.","warn":"AD 30 경계 — 교회시대 시작점으로 두었음"},{"name":"스데반의 순교","cat":"ev","s":32,"e":32,"lab":"AD 32","sl":"AD 32","ref":"행 7","tags":["스데반","첫 순교자","사울"],"desc":"첫 순교자의 피가 복음을 흩어 놓다.","warn":null},{"name":"바울의 회심","cat":"ev","s":33,"e":33,"lab":"AD 33","sl":"AD 33","ref":"행 9","tags":["사울","다메섹","아나니아"],"desc":"다메섹 도상의 빛, 박해자가 사도가 되다.","warn":null},{"name":"야고보의 순교와 베드로의 투옥","cat":"ev","s":44,"e":44,"lab":"AD 44","sl":"AD 44","ref":"행 12","tags":["야고보","헤롯","베드로"],"desc":"사도 야고보가 순교하고 베드로가 옥에 갇히다.","warn":null},{"name":"바울 1차 전도여행","cat":"ev","s":47,"e":49,"lab":"AD 47 – 49","sl":"AD 47","ref":"행 13–14","tags":["바나바","구브로","안디옥"],"desc":"안디옥 교회가 파송한 첫 여정.","warn":null},{"name":"예루살렘 공회의","cat":"ev","s":49,"e":49,"lab":"AD 49","sl":"AD 49","ref":"행 15","tags":["할례","이방인","야고보"],"desc":"이방인도 그대로 형제라는 결론.","warn":null},{"name":"바울 2차 전도여행","cat":"ev","s":49,"e":52,"lab":"AD 49 – 52","sl":"AD 49","ref":"행 16–18","tags":["실라","디모데","빌립보","고린도"],"desc":"마게도냐 환상을 따라 복음이 유럽으로.","warn":null},{"name":"바울 3차 전도여행","cat":"ev","s":53,"e":58,"lab":"AD 53 – 58","sl":"AD 53","ref":"행 19–21","tags":["에베소","두란노","고린도"],"desc":"에베소에서 삼 년, 가장 긴 정착 사역.","warn":null},{"name":"바울체포 · 로마압송","cat":"ev","s":58,"e":58,"lab":"AD 58","sl":"AD 58","ref":"행 21–28","tags":["가이사","로마","항해"],"desc":"가이사에게 상소하여 로마로 향하다.","warn":null},{"name":"로마의 대화재","cat":"ev","s":64,"e":64,"lab":"AD 64","sl":"AD 64","ref":"—","tags":["네로","로마","박해"],"desc":"화재의 책임이 그리스도인에게 씌워지다.","warn":null},{"name":"바울, 베드로 순교","cat":"ev","s":68,"e":68,"lab":"AD 68","sl":"AD 68","ref":"—","tags":["바울","베드로","순교"],"desc":"두 기둥 사도가 로마에서 순교하다.","warn":null},{"name":"예루살렘 성전의 파괴","cat":"ev","s":70,"e":70,"lab":"AD 70","sl":"AD 70","ref":"마 24","tags":["티투스","로마군","성전"],"desc":"성전이 완전히 무너지고 유대 체제가 끝나다.","warn":null},{"name":"요한의 밧모섬 유배","cat":"ev","s":95,"e":95,"lab":"AD 95","sl":"AD 95","ref":"계 1:9","tags":["요한","밧모섬","도미티아누스"],"desc":"계시록이 기록된 유배지.","warn":null},{"name":"사도요한의 죽음","cat":"ev","s":100,"e":100,"lab":"AD 100","sl":"AD 100","ref":"—","tags":["요한","에베소"],"desc":"마지막 사도가 세상을 떠나다.","warn":null},{"name":"새하늘과 새땅","cat":"ev","s":100,"e":100,"lab":"도표 끝점","sl":"도표 끝점","ref":"계 21","tags":["새 하늘","새 땅","완성"],"desc":"원본 도표의 오른쪽 끝, 모든 이야기가 향하는 곳.","warn":null},{"name":"애굽노예 시절","cat":"period","s":-1876,"e":-1446,"lab":"BC 1876 – 1446","sl":"BC 1876","ref":"출 1","tags":["애굽","노예","고센"],"desc":"야곱 가족의 이민에서 출애굽까지 사백삼십 년.","warn":null},{"name":"광야시절","cat":"period","s":-1446,"e":-1405,"lab":"BC 1446 – 1405","sl":"BC 1446","ref":"민 14","tags":["광야","사십 년"],"desc":"가데스바네아의 불순종이 부른 사십 년.","warn":null},{"name":"블레셋","cat":"period","s":-1200,"e":-1051,"lab":"BC 1200 – 1051","sl":"BC 1200","ref":"삿·삼상","tags":["블레셋","삼손","법궤"],"desc":"사사시대 후반을 짓누른 해양민족.","warn":"끝 연도"},{"name":"북왕국(이스라엘)","cat":"period","s":-931,"e":-722,"lab":"BC 931 – 722","sl":"BC 931","ref":"왕상·왕하","tags":["북이스라엘","사마리아"],"desc":"분열에서 앗수르 멸망까지 이백구 년.","warn":null},{"name":"남왕국(유다)","cat":"period","s":-931,"e":-586,"lab":"BC 931 – 586","sl":"BC 931","ref":"왕상·왕하","tags":["남유다","예루살렘"],"desc":"분열에서 바벨론 멸망까지 삼백사십오 년.","warn":null},{"name":"교회의 형성기","cat":"period","s":30,"e":47,"lab":"AD 30 – 47","sl":"AD 30","ref":"행 1–12","tags":["오순절","예루살렘 교회"],"desc":"오순절에서 첫 전도여행 직전까지.","warn":null},{"name":"4차 로마여행(옥중)","cat":"period","s":60,"e":62,"lab":"AD 60 – 62","sl":"AD 60","ref":"행 28","tags":["로마","옥중","셋집"],"desc":"로마 셋집에서 이 년간 이어진 옥중 사역.","warn":null},{"name":"임시석방","cat":"period","s":62,"e":64,"lab":"AD 62 – 64","sl":"AD 62","ref":"딤전·딛","tags":["석방","4차 사역"],"desc":"1차 투옥 이후의 짧은 자유 기간.","warn":"연대"},{"name":"애굽 중왕국","cat":"world","s":-2000,"e":-1800,"lab":"BC 2000 – 1800","sl":"BC 2000","ref":"—","tags":["애굽","파라오"],"desc":"족장들이 오가던 시기의 애굽.","warn":null},{"name":"힉소스 왕조","cat":"world","s":-1800,"e":-1570,"lab":"BC 1800 – 1570","sl":"BC 1800","ref":"—","tags":["힉소스","셈족"],"desc":"셈족 계열이 애굽을 다스린 시기. 요셉 등용의 배경.","warn":null},{"name":"애굽 신 왕조","cat":"world","s":-1570,"e":-1085,"lab":"BC 1570 – 1085","sl":"BC 1570","ref":"—","tags":["람세스","투트모세"],"desc":"출애굽의 무대가 된 강성한 애굽.","warn":"끝 연도"},{"name":"애굽왕 시삭의 남왕국 유다 침공","cat":"world","s":-925,"e":-925,"lab":"BC 925","sl":"BC 925","ref":"왕상 14:25","tags":["시삭","르호보암"],"desc":"분열 직후 예루살렘이 약탈당하다.","warn":null},{"name":"갈그미스 전투 (바로느고 패전)","cat":"world","s":-605,"e":-605,"lab":"BC 605","sl":"BC 605","ref":"렘 46","tags":["갈그미스","바로느고","바벨론"],"desc":"애굽이 지고 바벨론이 패권을 잡다.","warn":null},{"name":"수메르 도시국가 · 우르왕조","cat":"world","s":-2100,"e":-1950,"lab":"BC 2100 – 1950","sl":"BC 2100","ref":"—","tags":["수메르","우르"],"desc":"아브라함이 떠나온 갈대아 우르의 시대.","warn":"연대"},{"name":"바벨론","cat":"world","s":-1900,"e":-1700,"lab":"BC 1900 – 1700","sl":"BC 1900","ref":"—","tags":["바벨론","메소포타미아"],"desc":"고바벨론이 일어서던 시기.","warn":"연대"},{"name":"앗수르","cat":"world","s":-1900,"e":-1700,"lab":"BC 1900 – 1700","sl":"BC 1900","ref":"—","tags":["앗수르"],"desc":"초기 앗수르.","warn":"연대"},{"name":"함무라비 법전","cat":"world","s":-1770,"e":-1770,"lab":"BC 1770","sl":"BC 1770","ref":"—","tags":["함무라비","법전"],"desc":"고대 근동 최초의 성문법.","warn":null},{"name":"구바벨론 제국","cat":"world","s":-1700,"e":-1600,"lab":"BC 1700 – 1600","sl":"BC 1700","ref":"—","tags":["구바벨론"],"desc":"함무라비 이후의 바벨론.","warn":null},{"name":"앗수르 제국","cat":"world","s":-1300,"e":-626,"lab":"BC 1300 – 626","sl":"BC 1300","ref":"왕하 17","tags":["니느웨","산헤립","디글랏"],"desc":"북이스라엘을 멸망시킨 첫 세계 제국.","warn":"시작 연도"},{"name":"신바벨론(갈대아왕국)","cat":"world","s":-626,"e":-539,"lab":"BC 626 – 539","sl":"BC 626","ref":"단 1–5","tags":["느부갓네살","바벨론"],"desc":"남유다를 무너뜨리고 포로로 끌어간 제국.","warn":null},{"name":"메대제국","cat":"world","s":-625,"e":-539,"lab":"BC 625 – 539","sl":"BC 625","ref":"단 5","tags":["메대","다리오"],"desc":"바벨론을 무너뜨린 연합 세력.","warn":null},{"name":"바사메데제국(페르시아)","cat":"world","s":-539,"e":-331,"lab":"BC 539 – 331","sl":"BC 539","ref":"스·느·에","tags":["고레스","다리오","아하수에로"],"desc":"귀환을 허락한 관용의 제국.","warn":null},{"name":"헬라","cat":"world","s":-331,"e":-63,"lab":"BC 331 – 63","sl":"BC 331","ref":"중간사","tags":["알렉산더","셀류코스","프톨레미"],"desc":"헬라어와 헬라 문화가 세계 공용이 된 시대.","warn":null},{"name":"로마제국","cat":"world","s":-63,"e":100,"lab":"BC 63 – AD 100","sl":"BC 63","ref":"눅 2:1","tags":["가이사","아우구스투스"],"desc":"복음이 길을 따라 퍼져나간 제국.","warn":null},{"name":"네로황제의 통치","cat":"world","s":54,"e":68,"lab":"AD 54 – 68","sl":"AD 54","ref":"—","tags":["네로","박해","대화재"],"desc":"첫 조직적 박해가 시작된 치세.","warn":null}];
+const ITEMS=RAWITEMS.map((r,i)=>Object.assign({},r,{id:'i'+i,lane:CATS[r.cat].lane,color:CATS[r.cat].c}));
+const byId=id=>ITEMS.find(x=>x.id===id);
+const eraOf=y=>ERAS.find(e=>y>=e.s&&y<e.e)||ERAS[ERAS.length-1];
+const ERA_FIX={};
+const itEra=it=>eraOf(it.s);
+const yr=y=>y<0?'BC '+(-y):'AD '+y;
+const ylab=it=>it.sl;
+const BREAKS=[[-4000,0],[-2166,70],[-1805,180],[-1405,330],[-1051,470],[-931,530],[-605,660],[-538,700],[-331,760],[-5,830],[30,1000],[100,1240]];
+const TOTAL=1240;
+function ux(y){
+  if(y<=BREAKS[0][0])return 0;
+  for(let i=1;i<BREAKS.length;i++){
+    const[a,ax]=BREAKS[i-1],[b,bx]=BREAKS[i];
+    if(y<=b)return ax+(y-a)/(b-a)*(bx-ax);
+  }
+  return TOTAL;
+}
+
+const QR={"e1":{"n":29,"d":"M2 2h7v1h-7zM10 2h1v1h-1zM13 2h3v1h-3zM20 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM11 3h3v1h-3zM15 3h1v1h-1zM18 3h1v1h-1zM20 3h1v1h-1zM26 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h1v1h-1zM13 4h4v1h-4zM18 4h1v1h-1zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM11 5h3v1h-3zM15 5h1v1h-1zM17 5h1v1h-1zM20 5h1v1h-1zM22 5h3v1h-3zM26 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM11 6h2v1h-2zM14 6h1v1h-1zM16 6h1v1h-1zM20 6h1v1h-1zM22 6h3v1h-3zM26 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM12 7h2v1h-2zM15 7h2v1h-2zM20 7h1v1h-1zM26 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h7v1h-7zM13 9h1v1h-1zM16 9h3v1h-3zM2 10h1v1h-1zM4 10h1v1h-1zM8 10h2v1h-2zM11 10h4v1h-4zM18 10h1v1h-1zM21 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM2 11h1v1h-1zM4 11h1v1h-1zM6 11h2v1h-2zM9 11h2v1h-2zM14 11h1v1h-1zM17 11h1v1h-1zM20 11h2v1h-2zM23 11h1v1h-1zM25 11h2v1h-2zM2 12h4v1h-4zM7 12h7v1h-7zM15 12h1v1h-1zM17 12h1v1h-1zM21 12h4v1h-4zM26 12h1v1h-1zM5 13h1v1h-1zM7 13h1v1h-1zM11 13h1v1h-1zM16 13h2v1h-2zM19 13h3v1h-3zM23 13h1v1h-1zM6 14h3v1h-3zM14 14h1v1h-1zM16 14h1v1h-1zM18 14h1v1h-1zM20 14h1v1h-1zM26 14h1v1h-1zM11 15h2v1h-2zM14 15h1v1h-1zM16 15h3v1h-3zM20 15h2v1h-2zM25 15h2v1h-2zM2 16h3v1h-3zM6 16h1v1h-1zM8 16h2v1h-2zM11 16h2v1h-2zM14 16h4v1h-4zM23 16h2v1h-2zM26 16h1v1h-1zM4 17h2v1h-2zM7 17h1v1h-1zM12 17h3v1h-3zM16 17h3v1h-3zM20 17h4v1h-4zM2 18h2v1h-2zM6 18h3v1h-3zM12 18h1v1h-1zM15 18h2v1h-2zM18 18h5v1h-5zM25 18h1v1h-1zM10 19h3v1h-3zM15 19h1v1h-1zM18 19h1v1h-1zM22 19h1v1h-1zM26 19h1v1h-1zM2 20h7v1h-7zM10 20h4v1h-4zM18 20h1v1h-1zM20 20h1v1h-1zM22 20h1v1h-1zM26 20h1v1h-1zM2 21h1v1h-1zM8 21h1v1h-1zM11 21h2v1h-2zM15 21h1v1h-1zM17 21h2v1h-2zM22 21h1v1h-1zM25 21h1v1h-1zM2 22h1v1h-1zM4 22h3v1h-3zM8 22h1v1h-1zM12 22h4v1h-4zM17 22h6v1h-6zM26 22h1v1h-1zM2 23h1v1h-1zM4 23h3v1h-3zM8 23h1v1h-1zM11 23h2v1h-2zM14 23h1v1h-1zM19 23h1v1h-1zM22 23h1v1h-1zM24 23h2v1h-2zM2 24h1v1h-1zM4 24h3v1h-3zM8 24h1v1h-1zM10 24h2v1h-2zM14 24h3v1h-3zM18 24h2v1h-2zM21 24h3v1h-3zM25 24h2v1h-2zM2 25h1v1h-1zM8 25h1v1h-1zM13 25h2v1h-2zM16 25h1v1h-1zM18 25h2v1h-2zM21 25h2v1h-2zM2 26h7v1h-7zM10 26h1v1h-1zM15 26h2v1h-2zM18 26h1v1h-1zM23 26h1v1h-1zM26 26h1v1h-1z","u":"https://tongdok.kr/e1"},"e2":{"n":29,"d":"M2 2h7v1h-7zM11 2h3v1h-3zM17 2h1v1h-1zM20 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM10 3h1v1h-1zM13 3h1v1h-1zM17 3h2v1h-2zM20 3h1v1h-1zM26 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM14 4h1v1h-1zM16 4h3v1h-3zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM11 5h1v1h-1zM20 5h1v1h-1zM22 5h3v1h-3zM26 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM10 6h8v1h-8zM20 6h1v1h-1zM22 6h3v1h-3zM26 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM11 7h1v1h-1zM14 7h1v1h-1zM16 7h2v1h-2zM20 7h1v1h-1zM26 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h7v1h-7zM11 9h1v1h-1zM13 9h1v1h-1zM15 9h2v1h-2zM18 9h1v1h-1zM2 10h1v1h-1zM4 10h1v1h-1zM6 10h1v1h-1zM8 10h1v1h-1zM11 10h1v1h-1zM13 10h1v1h-1zM15 10h1v1h-1zM17 10h2v1h-2zM22 10h1v1h-1zM25 10h1v1h-1zM2 11h1v1h-1zM4 11h2v1h-2zM9 11h3v1h-3zM13 11h3v1h-3zM19 11h2v1h-2zM26 11h1v1h-1zM2 12h1v1h-1zM4 12h5v1h-5zM10 12h1v1h-1zM12 12h3v1h-3zM19 12h1v1h-1zM22 12h1v1h-1zM24 12h3v1h-3zM2 13h1v1h-1zM5 13h1v1h-1zM7 13h1v1h-1zM9 13h1v1h-1zM12 13h1v1h-1zM15 13h2v1h-2zM20 13h1v1h-1zM25 13h1v1h-1zM4 14h2v1h-2zM7 14h2v1h-2zM10 14h12v1h-12zM23 14h1v1h-1zM25 14h2v1h-2zM3 15h1v1h-1zM7 15h1v1h-1zM10 15h1v1h-1zM12 15h5v1h-5zM18 15h3v1h-3zM23 15h1v1h-1zM26 15h1v1h-1zM2 16h1v1h-1zM5 16h2v1h-2zM8 16h1v1h-1zM10 16h1v1h-1zM13 16h4v1h-4zM19 16h1v1h-1zM21 16h1v1h-1zM24 16h3v1h-3zM3 17h5v1h-5zM9 17h1v1h-1zM11 17h2v1h-2zM14 17h2v1h-2zM18 17h3v1h-3zM22 17h1v1h-1zM25 17h1v1h-1zM2 18h1v1h-1zM5 18h2v1h-2zM8 18h1v1h-1zM11 18h3v1h-3zM16 18h8v1h-8zM10 19h4v1h-4zM17 19h2v1h-2zM22 19h2v1h-2zM25 19h2v1h-2zM2 20h7v1h-7zM12 20h1v1h-1zM15 20h1v1h-1zM17 20h2v1h-2zM20 20h1v1h-1zM22 20h2v1h-2zM25 20h2v1h-2zM2 21h1v1h-1zM8 21h1v1h-1zM11 21h3v1h-3zM18 21h1v1h-1zM22 21h2v1h-2zM2 22h1v1h-1zM4 22h3v1h-3zM8 22h1v1h-1zM10 22h2v1h-2zM14 22h1v1h-1zM18 22h6v1h-6zM25 22h2v1h-2zM2 23h1v1h-1zM4 23h3v1h-3zM8 23h1v1h-1zM11 23h5v1h-5zM17 23h1v1h-1zM21 23h4v1h-4zM2 24h1v1h-1zM4 24h3v1h-3zM8 24h1v1h-1zM10 24h1v1h-1zM12 24h3v1h-3zM16 24h3v1h-3zM22 24h1v1h-1zM26 24h1v1h-1zM2 25h1v1h-1zM8 25h1v1h-1zM12 25h1v1h-1zM14 25h5v1h-5zM22 25h2v1h-2zM25 25h1v1h-1zM2 26h7v1h-7zM10 26h4v1h-4zM16 26h4v1h-4zM21 26h1v1h-1zM25 26h2v1h-2z","u":"https://tongdok.kr/e2"},"e3":{"n":29,"d":"M2 2h7v1h-7zM10 2h1v1h-1zM14 2h2v1h-2zM20 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM15 3h1v1h-1zM18 3h1v1h-1zM20 3h1v1h-1zM26 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h1v1h-1zM12 4h5v1h-5zM18 4h1v1h-1zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM11 5h1v1h-1zM13 5h3v1h-3zM17 5h1v1h-1zM20 5h1v1h-1zM22 5h3v1h-3zM26 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM12 6h3v1h-3zM16 6h1v1h-1zM20 6h1v1h-1zM22 6h3v1h-3zM26 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM12 7h1v1h-1zM15 7h2v1h-2zM20 7h1v1h-1zM26 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h7v1h-7zM16 9h3v1h-3zM2 10h1v1h-1zM4 10h1v1h-1zM8 10h2v1h-2zM11 10h1v1h-1zM13 10h2v1h-2zM18 10h1v1h-1zM21 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM5 11h1v1h-1zM7 11h1v1h-1zM9 11h1v1h-1zM13 11h1v1h-1zM17 11h1v1h-1zM20 11h2v1h-2zM23 11h1v1h-1zM25 11h2v1h-2zM6 12h3v1h-3zM11 12h2v1h-2zM15 12h1v1h-1zM17 12h1v1h-1zM21 12h4v1h-4zM26 12h1v1h-1zM5 13h1v1h-1zM7 13h1v1h-1zM9 13h2v1h-2zM12 13h2v1h-2zM16 13h2v1h-2zM19 13h3v1h-3zM23 13h1v1h-1zM2 14h1v1h-1zM4 14h3v1h-3zM8 14h3v1h-3zM14 14h1v1h-1zM16 14h1v1h-1zM18 14h1v1h-1zM20 14h1v1h-1zM26 14h1v1h-1zM3 15h2v1h-2zM6 15h1v1h-1zM12 15h1v1h-1zM14 15h1v1h-1zM16 15h3v1h-3zM20 15h2v1h-2zM25 15h2v1h-2zM2 16h3v1h-3zM6 16h1v1h-1zM8 16h5v1h-5zM14 16h1v1h-1zM16 16h2v1h-2zM23 16h2v1h-2zM26 16h1v1h-1zM4 17h3v1h-3zM11 17h4v1h-4zM16 17h3v1h-3zM20 17h4v1h-4zM2 18h4v1h-4zM7 18h2v1h-2zM10 18h3v1h-3zM15 18h2v1h-2zM18 18h5v1h-5zM25 18h1v1h-1zM10 19h2v1h-2zM15 19h1v1h-1zM18 19h1v1h-1zM22 19h1v1h-1zM26 19h1v1h-1zM2 20h7v1h-7zM10 20h4v1h-4zM18 20h1v1h-1zM20 20h1v1h-1zM22 20h1v1h-1zM26 20h1v1h-1zM2 21h1v1h-1zM8 21h1v1h-1zM11 21h2v1h-2zM15 21h1v1h-1zM17 21h2v1h-2zM22 21h1v1h-1zM25 21h1v1h-1zM2 22h1v1h-1zM4 22h3v1h-3zM8 22h1v1h-1zM11 22h5v1h-5zM17 22h6v1h-6zM26 22h1v1h-1zM2 23h1v1h-1zM4 23h3v1h-3zM8 23h1v1h-1zM11 23h1v1h-1zM14 23h1v1h-1zM19 23h1v1h-1zM22 23h1v1h-1zM24 23h2v1h-2zM2 24h1v1h-1zM4 24h3v1h-3zM8 24h1v1h-1zM10 24h1v1h-1zM12 24h1v1h-1zM14 24h3v1h-3zM18 24h2v1h-2zM21 24h3v1h-3zM25 24h2v1h-2zM2 25h1v1h-1zM8 25h1v1h-1zM13 25h2v1h-2zM16 25h1v1h-1zM18 25h2v1h-2zM21 25h2v1h-2zM2 26h7v1h-7zM10 26h2v1h-2zM15 26h2v1h-2zM18 26h1v1h-1zM23 26h1v1h-1zM26 26h1v1h-1z","u":"https://tongdok.kr/e3"},"e4":{"n":29,"d":"M2 2h7v1h-7zM10 2h6v1h-6zM20 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM11 3h1v1h-1zM13 3h3v1h-3zM18 3h1v1h-1zM20 3h1v1h-1zM26 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h1v1h-1zM12 4h5v1h-5zM18 4h1v1h-1zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM12 5h4v1h-4zM17 5h1v1h-1zM20 5h1v1h-1zM22 5h3v1h-3zM26 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM11 6h2v1h-2zM16 6h1v1h-1zM20 6h1v1h-1zM22 6h3v1h-3zM26 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM15 7h2v1h-2zM20 7h1v1h-1zM26 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h7v1h-7zM12 9h3v1h-3zM16 9h3v1h-3zM2 10h1v1h-1zM4 10h1v1h-1zM8 10h2v1h-2zM18 10h1v1h-1zM21 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM2 11h1v1h-1zM5 11h2v1h-2zM10 11h1v1h-1zM12 11h3v1h-3zM17 11h1v1h-1zM20 11h2v1h-2zM23 11h1v1h-1zM25 11h2v1h-2zM3 12h1v1h-1zM5 12h1v1h-1zM7 12h2v1h-2zM12 12h1v1h-1zM15 12h1v1h-1zM17 12h1v1h-1zM21 12h4v1h-4zM26 12h1v1h-1zM4 13h1v1h-1zM7 13h1v1h-1zM12 13h1v1h-1zM14 13h1v1h-1zM16 13h2v1h-2zM19 13h3v1h-3zM23 13h1v1h-1zM3 14h1v1h-1zM8 14h2v1h-2zM12 14h1v1h-1zM14 14h1v1h-1zM16 14h1v1h-1zM18 14h1v1h-1zM20 14h1v1h-1zM26 14h1v1h-1zM5 15h3v1h-3zM10 15h1v1h-1zM12 15h1v1h-1zM14 15h1v1h-1zM16 15h3v1h-3zM20 15h2v1h-2zM25 15h2v1h-2zM2 16h4v1h-4zM7 16h3v1h-3zM11 16h1v1h-1zM14 16h2v1h-2zM17 16h1v1h-1zM23 16h2v1h-2zM26 16h1v1h-1zM4 17h1v1h-1zM6 17h2v1h-2zM9 17h1v1h-1zM12 17h3v1h-3zM17 17h2v1h-2zM20 17h4v1h-4zM2 18h3v1h-3zM6 18h5v1h-5zM12 18h1v1h-1zM15 18h2v1h-2zM18 18h5v1h-5zM25 18h1v1h-1zM10 19h1v1h-1zM12 19h1v1h-1zM15 19h1v1h-1zM18 19h1v1h-1zM22 19h1v1h-1zM26 19h1v1h-1zM2 20h7v1h-7zM10 20h4v1h-4zM18 20h1v1h-1zM20 20h1v1h-1zM22 20h1v1h-1zM26 20h1v1h-1zM2 21h1v1h-1zM8 21h1v1h-1zM12 21h1v1h-1zM15 21h1v1h-1zM17 21h2v1h-2zM22 21h1v1h-1zM25 21h1v1h-1zM2 22h1v1h-1zM4 22h3v1h-3zM8 22h1v1h-1zM12 22h4v1h-4zM17 22h6v1h-6zM26 22h1v1h-1zM2 23h1v1h-1zM4 23h3v1h-3zM8 23h1v1h-1zM11 23h1v1h-1zM14 23h1v1h-1zM19 23h1v1h-1zM22 23h1v1h-1zM24 23h2v1h-2zM2 24h1v1h-1zM4 24h3v1h-3zM8 24h1v1h-1zM10 24h1v1h-1zM12 24h1v1h-1zM14 24h3v1h-3zM18 24h2v1h-2zM21 24h3v1h-3zM25 24h2v1h-2zM2 25h1v1h-1zM8 25h1v1h-1zM11 25h4v1h-4zM16 25h1v1h-1zM18 25h2v1h-2zM21 25h2v1h-2zM2 26h7v1h-7zM10 26h1v1h-1zM15 26h2v1h-2zM18 26h1v1h-1zM23 26h1v1h-1zM26 26h1v1h-1z","u":"https://tongdok.kr/e4"},"e5":{"n":29,"d":"M2 2h7v1h-7zM10 2h2v1h-2zM13 2h1v1h-1zM15 2h1v1h-1zM20 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM13 3h3v1h-3zM18 3h1v1h-1zM20 3h1v1h-1zM26 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h2v1h-2zM13 4h4v1h-4zM18 4h1v1h-1zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM11 5h3v1h-3zM15 5h1v1h-1zM17 5h1v1h-1zM20 5h1v1h-1zM22 5h3v1h-3zM26 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM11 6h3v1h-3zM16 6h1v1h-1zM20 6h1v1h-1zM22 6h3v1h-3zM26 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM12 7h5v1h-5zM20 7h1v1h-1zM26 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h7v1h-7zM12 9h3v1h-3zM16 9h3v1h-3zM2 10h1v1h-1zM4 10h1v1h-1zM8 10h2v1h-2zM11 10h1v1h-1zM13 10h2v1h-2zM18 10h1v1h-1zM21 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM3 11h2v1h-2zM6 11h1v1h-1zM9 11h1v1h-1zM12 11h1v1h-1zM17 11h1v1h-1zM20 11h2v1h-2zM23 11h1v1h-1zM25 11h2v1h-2zM2 12h1v1h-1zM4 12h2v1h-2zM8 12h3v1h-3zM12 12h1v1h-1zM14 12h2v1h-2zM17 12h1v1h-1zM21 12h4v1h-4zM26 12h1v1h-1zM2 13h4v1h-4zM9 13h4v1h-4zM14 13h1v1h-1zM16 13h2v1h-2zM19 13h3v1h-3zM23 13h1v1h-1zM2 14h1v1h-1zM5 14h2v1h-2zM8 14h2v1h-2zM14 14h1v1h-1zM16 14h1v1h-1zM18 14h1v1h-1zM20 14h1v1h-1zM26 14h1v1h-1zM3 15h2v1h-2zM7 15h1v1h-1zM9 15h1v1h-1zM11 15h2v1h-2zM14 15h1v1h-1zM16 15h3v1h-3zM20 15h2v1h-2zM25 15h2v1h-2zM2 16h2v1h-2zM5 16h1v1h-1zM8 16h2v1h-2zM11 16h2v1h-2zM14 16h2v1h-2zM17 16h1v1h-1zM23 16h2v1h-2zM26 16h1v1h-1zM4 17h4v1h-4zM9 17h1v1h-1zM11 17h4v1h-4zM16 17h3v1h-3zM20 17h4v1h-4zM2 18h2v1h-2zM5 18h1v1h-1zM7 18h2v1h-2zM11 18h2v1h-2zM15 18h2v1h-2zM18 18h5v1h-5zM25 18h1v1h-1zM10 19h2v1h-2zM15 19h1v1h-1zM18 19h1v1h-1zM22 19h1v1h-1zM26 19h1v1h-1zM2 20h7v1h-7zM10 20h4v1h-4zM18 20h1v1h-1zM20 20h1v1h-1zM22 20h1v1h-1zM26 20h1v1h-1zM2 21h1v1h-1zM8 21h1v1h-1zM11 21h2v1h-2zM15 21h1v1h-1zM17 21h2v1h-2zM22 21h1v1h-1zM25 21h1v1h-1zM2 22h1v1h-1zM4 22h3v1h-3zM8 22h1v1h-1zM11 22h1v1h-1zM13 22h3v1h-3zM17 22h6v1h-6zM26 22h1v1h-1zM2 23h1v1h-1zM4 23h3v1h-3zM8 23h1v1h-1zM12 23h1v1h-1zM14 23h1v1h-1zM19 23h1v1h-1zM22 23h1v1h-1zM24 23h2v1h-2zM2 24h1v1h-1zM4 24h3v1h-3zM8 24h1v1h-1zM10 24h3v1h-3zM14 24h3v1h-3zM18 24h2v1h-2zM21 24h3v1h-3zM25 24h2v1h-2zM2 25h1v1h-1zM8 25h1v1h-1zM13 25h2v1h-2zM16 25h1v1h-1zM18 25h2v1h-2zM21 25h2v1h-2zM2 26h7v1h-7zM10 26h3v1h-3zM15 26h2v1h-2zM18 26h1v1h-1zM23 26h1v1h-1zM26 26h1v1h-1z","u":"https://tongdok.kr/e5"},"e6":{"n":29,"d":"M2 2h7v1h-7zM10 2h3v1h-3zM14 2h2v1h-2zM20 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM10 3h1v1h-1zM12 3h1v1h-1zM16 3h1v1h-1zM18 3h1v1h-1zM20 3h1v1h-1zM26 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h1v1h-1zM14 4h2v1h-2zM18 4h1v1h-1zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM12 5h7v1h-7zM20 5h1v1h-1zM22 5h3v1h-3zM26 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM10 6h1v1h-1zM13 6h1v1h-1zM15 6h2v1h-2zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h3v1h-3zM26 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM12 7h1v1h-1zM14 7h3v1h-3zM18 7h1v1h-1zM20 7h1v1h-1zM26 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h7v1h-7zM12 9h1v1h-1zM15 9h1v1h-1zM17 9h2v1h-2zM2 10h1v1h-1zM5 10h6v1h-6zM12 10h2v1h-2zM16 10h1v1h-1zM18 10h2v1h-2zM22 10h1v1h-1zM24 10h3v1h-3zM2 11h1v1h-1zM6 11h1v1h-1zM10 11h1v1h-1zM14 11h1v1h-1zM16 11h3v1h-3zM21 11h5v1h-5zM2 12h3v1h-3zM7 12h2v1h-2zM10 12h1v1h-1zM13 12h1v1h-1zM17 12h2v1h-2zM22 12h2v1h-2zM26 12h1v1h-1zM2 13h1v1h-1zM4 13h1v1h-1zM6 13h1v1h-1zM9 13h4v1h-4zM16 13h3v1h-3zM21 13h1v1h-1zM23 13h4v1h-4zM2 14h4v1h-4zM7 14h2v1h-2zM10 14h1v1h-1zM12 14h1v1h-1zM14 14h1v1h-1zM16 14h1v1h-1zM18 14h1v1h-1zM20 14h1v1h-1zM26 14h1v1h-1zM2 15h1v1h-1zM5 15h1v1h-1zM7 15h1v1h-1zM9 15h1v1h-1zM11 15h2v1h-2zM15 15h1v1h-1zM17 15h2v1h-2zM22 15h1v1h-1zM25 15h1v1h-1zM2 16h2v1h-2zM5 16h1v1h-1zM8 16h2v1h-2zM11 16h1v1h-1zM13 16h2v1h-2zM16 16h2v1h-2zM19 16h1v1h-1zM22 16h5v1h-5zM2 17h1v1h-1zM6 17h1v1h-1zM9 17h3v1h-3zM13 17h1v1h-1zM16 17h2v1h-2zM21 17h1v1h-1zM23 17h2v1h-2zM26 17h1v1h-1zM2 18h1v1h-1zM5 18h4v1h-4zM11 18h1v1h-1zM16 18h1v1h-1zM18 18h5v1h-5zM24 18h2v1h-2zM10 19h1v1h-1zM12 19h4v1h-4zM18 19h1v1h-1zM22 19h1v1h-1zM24 19h2v1h-2zM2 20h7v1h-7zM10 20h4v1h-4zM18 20h1v1h-1zM20 20h1v1h-1zM22 20h1v1h-1zM26 20h1v1h-1zM2 21h1v1h-1zM8 21h1v1h-1zM10 21h1v1h-1zM12 21h1v1h-1zM14 21h1v1h-1zM16 21h3v1h-3zM22 21h1v1h-1zM25 21h2v1h-2zM2 22h1v1h-1zM4 22h3v1h-3zM8 22h1v1h-1zM10 22h3v1h-3zM14 22h9v1h-9zM25 22h2v1h-2zM2 23h1v1h-1zM4 23h3v1h-3zM8 23h1v1h-1zM10 23h2v1h-2zM16 23h1v1h-1zM18 23h3v1h-3zM25 23h2v1h-2zM2 24h1v1h-1zM4 24h3v1h-3zM8 24h1v1h-1zM11 24h2v1h-2zM14 24h1v1h-1zM16 24h1v1h-1zM19 24h1v1h-1zM22 24h5v1h-5zM2 25h1v1h-1zM8 25h1v1h-1zM11 25h1v1h-1zM16 25h1v1h-1zM20 25h3v1h-3zM24 25h3v1h-3zM2 26h7v1h-7zM10 26h2v1h-2zM15 26h2v1h-2zM18 26h1v1h-1zM23 26h1v1h-1zM26 26h1v1h-1z","u":"https://tongdok.kr/e6"},"e7":{"n":29,"d":"M2 2h7v1h-7zM11 2h1v1h-1zM15 2h1v1h-1zM20 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM10 3h3v1h-3zM15 3h1v1h-1zM18 3h1v1h-1zM20 3h1v1h-1zM26 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h2v1h-2zM14 4h1v1h-1zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM10 5h4v1h-4zM15 5h4v1h-4zM20 5h1v1h-1zM22 5h3v1h-3zM26 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM13 6h1v1h-1zM15 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h3v1h-3zM26 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM12 7h1v1h-1zM15 7h2v1h-2zM20 7h1v1h-1zM26 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h7v1h-7zM10 9h1v1h-1zM12 9h1v1h-1zM16 9h3v1h-3zM2 10h1v1h-1zM8 10h1v1h-1zM10 10h2v1h-2zM14 10h3v1h-3zM19 10h2v1h-2zM23 10h3v1h-3zM3 11h4v1h-4zM9 11h1v1h-1zM13 11h1v1h-1zM16 11h3v1h-3zM21 11h5v1h-5zM4 12h1v1h-1zM7 12h4v1h-4zM14 12h1v1h-1zM16 12h4v1h-4zM23 12h1v1h-1zM25 12h2v1h-2zM3 13h3v1h-3zM13 13h1v1h-1zM16 13h2v1h-2zM19 13h1v1h-1zM21 13h1v1h-1zM23 13h1v1h-1zM26 13h1v1h-1zM4 14h1v1h-1zM6 14h3v1h-3zM10 14h1v1h-1zM14 14h1v1h-1zM16 14h1v1h-1zM18 14h1v1h-1zM20 14h1v1h-1zM26 14h1v1h-1zM2 15h1v1h-1zM6 15h2v1h-2zM9 15h1v1h-1zM12 15h1v1h-1zM16 15h3v1h-3zM21 15h1v1h-1zM25 15h1v1h-1zM2 16h1v1h-1zM4 16h5v1h-5zM11 16h1v1h-1zM13 16h7v1h-7zM21 16h3v1h-3zM25 16h2v1h-2zM2 17h1v1h-1zM5 17h2v1h-2zM9 17h2v1h-2zM13 17h1v1h-1zM17 17h1v1h-1zM21 17h1v1h-1zM23 17h2v1h-2zM26 17h1v1h-1zM2 18h1v1h-1zM8 18h2v1h-2zM13 18h1v1h-1zM18 18h5v1h-5zM24 18h1v1h-1zM10 19h3v1h-3zM14 19h2v1h-2zM18 19h1v1h-1zM22 19h1v1h-1zM2 20h7v1h-7zM11 20h3v1h-3zM18 20h1v1h-1zM20 20h1v1h-1zM22 20h1v1h-1zM26 20h1v1h-1zM2 21h1v1h-1zM8 21h1v1h-1zM11 21h2v1h-2zM14 21h2v1h-2zM17 21h2v1h-2zM22 21h1v1h-1zM25 21h2v1h-2zM2 22h1v1h-1zM4 22h3v1h-3zM8 22h1v1h-1zM12 22h1v1h-1zM14 22h1v1h-1zM16 22h7v1h-7zM24 22h3v1h-3zM2 23h1v1h-1zM4 23h3v1h-3zM8 23h1v1h-1zM12 23h1v1h-1zM16 23h1v1h-1zM18 23h3v1h-3zM25 23h2v1h-2zM2 24h1v1h-1zM4 24h3v1h-3zM8 24h1v1h-1zM12 24h3v1h-3zM23 24h2v1h-2zM26 24h1v1h-1zM2 25h1v1h-1zM8 25h1v1h-1zM13 25h1v1h-1zM16 25h1v1h-1zM18 25h5v1h-5zM26 25h1v1h-1zM2 26h7v1h-7zM10 26h1v1h-1zM12 26h1v1h-1zM15 26h2v1h-2zM18 26h1v1h-1zM23 26h1v1h-1zM26 26h1v1h-1z","u":"https://tongdok.kr/e7"},"e8":{"n":29,"d":"M2 2h7v1h-7zM11 2h3v1h-3zM15 2h1v1h-1zM20 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM10 3h1v1h-1zM14 3h2v1h-2zM18 3h1v1h-1zM20 3h1v1h-1zM26 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h1v1h-1zM13 4h2v1h-2zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM10 5h1v1h-1zM12 5h2v1h-2zM15 5h4v1h-4zM20 5h1v1h-1zM22 5h3v1h-3zM26 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM11 6h2v1h-2zM15 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h3v1h-3zM26 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM11 7h1v1h-1zM13 7h1v1h-1zM15 7h2v1h-2zM20 7h1v1h-1zM26 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h7v1h-7zM10 9h2v1h-2zM14 9h1v1h-1zM16 9h3v1h-3zM2 10h1v1h-1zM8 10h1v1h-1zM10 10h2v1h-2zM15 10h2v1h-2zM19 10h2v1h-2zM23 10h3v1h-3zM3 11h1v1h-1zM5 11h2v1h-2zM9 11h1v1h-1zM12 11h3v1h-3zM16 11h3v1h-3zM21 11h5v1h-5zM2 12h4v1h-4zM7 12h3v1h-3zM12 12h2v1h-2zM16 12h4v1h-4zM23 12h1v1h-1zM25 12h2v1h-2zM2 13h2v1h-2zM5 13h2v1h-2zM9 13h1v1h-1zM13 13h2v1h-2zM16 13h2v1h-2zM19 13h1v1h-1zM21 13h1v1h-1zM23 13h1v1h-1zM26 13h1v1h-1zM3 14h1v1h-1zM5 14h5v1h-5zM12 14h3v1h-3zM16 14h1v1h-1zM18 14h1v1h-1zM20 14h1v1h-1zM26 14h1v1h-1zM2 15h1v1h-1zM6 15h1v1h-1zM9 15h1v1h-1zM12 15h1v1h-1zM15 15h4v1h-4zM21 15h1v1h-1zM25 15h1v1h-1zM2 16h1v1h-1zM4 16h2v1h-2zM7 16h2v1h-2zM10 16h5v1h-5zM17 16h3v1h-3zM21 16h3v1h-3zM25 16h2v1h-2zM2 17h1v1h-1zM4 17h1v1h-1zM6 17h1v1h-1zM11 17h3v1h-3zM16 17h2v1h-2zM21 17h1v1h-1zM23 17h2v1h-2zM26 17h1v1h-1zM2 18h1v1h-1zM5 18h1v1h-1zM7 18h2v1h-2zM10 18h1v1h-1zM12 18h2v1h-2zM18 18h5v1h-5zM24 18h1v1h-1zM10 19h1v1h-1zM14 19h2v1h-2zM18 19h1v1h-1zM22 19h1v1h-1zM2 20h7v1h-7zM11 20h3v1h-3zM18 20h1v1h-1zM20 20h1v1h-1zM22 20h1v1h-1zM26 20h1v1h-1zM2 21h1v1h-1zM8 21h1v1h-1zM11 21h2v1h-2zM14 21h2v1h-2zM17 21h2v1h-2zM22 21h1v1h-1zM25 21h2v1h-2zM2 22h1v1h-1zM4 22h3v1h-3zM8 22h1v1h-1zM11 22h1v1h-1zM14 22h1v1h-1zM16 22h7v1h-7zM24 22h3v1h-3zM2 23h1v1h-1zM4 23h3v1h-3zM8 23h1v1h-1zM11 23h2v1h-2zM16 23h1v1h-1zM18 23h3v1h-3zM25 23h2v1h-2zM2 24h1v1h-1zM4 24h3v1h-3zM8 24h1v1h-1zM12 24h3v1h-3zM23 24h2v1h-2zM26 24h1v1h-1zM2 25h1v1h-1zM8 25h1v1h-1zM11 25h1v1h-1zM13 25h1v1h-1zM16 25h1v1h-1zM18 25h5v1h-5zM26 25h1v1h-1zM2 26h7v1h-7zM10 26h3v1h-3zM15 26h2v1h-2zM18 26h1v1h-1zM23 26h1v1h-1zM26 26h1v1h-1z","u":"https://tongdok.kr/e8"},"e9":{"n":29,"d":"M2 2h7v1h-7zM10 2h2v1h-2zM13 2h3v1h-3zM20 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM11 3h1v1h-1zM15 3h1v1h-1zM18 3h1v1h-1zM20 3h1v1h-1zM26 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h2v1h-2zM14 4h3v1h-3zM18 4h1v1h-1zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM11 5h1v1h-1zM13 5h1v1h-1zM15 5h1v1h-1zM17 5h1v1h-1zM20 5h1v1h-1zM22 5h3v1h-3zM26 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM11 6h1v1h-1zM16 6h1v1h-1zM20 6h1v1h-1zM22 6h3v1h-3zM26 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM10 7h3v1h-3zM15 7h2v1h-2zM20 7h1v1h-1zM26 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h7v1h-7zM11 9h1v1h-1zM16 9h3v1h-3zM2 10h1v1h-1zM4 10h1v1h-1zM8 10h2v1h-2zM12 10h1v1h-1zM14 10h1v1h-1zM18 10h1v1h-1zM21 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM14 11h1v1h-1zM17 11h1v1h-1zM20 11h2v1h-2zM23 11h1v1h-1zM25 11h2v1h-2zM3 12h7v1h-7zM14 12h2v1h-2zM17 12h1v1h-1zM21 12h4v1h-4zM26 12h1v1h-1zM2 13h1v1h-1zM6 13h2v1h-2zM10 13h2v1h-2zM13 13h1v1h-1zM16 13h2v1h-2zM19 13h3v1h-3zM23 13h1v1h-1zM2 14h1v1h-1zM7 14h3v1h-3zM13 14h2v1h-2zM16 14h1v1h-1zM18 14h1v1h-1zM20 14h1v1h-1zM26 14h1v1h-1zM3 15h3v1h-3zM10 15h3v1h-3zM14 15h5v1h-5zM20 15h2v1h-2zM25 15h2v1h-2zM2 16h8v1h-8zM11 16h2v1h-2zM14 16h4v1h-4zM23 16h2v1h-2zM26 16h1v1h-1zM5 17h1v1h-1zM10 17h1v1h-1zM13 17h2v1h-2zM16 17h3v1h-3zM20 17h4v1h-4zM2 18h2v1h-2zM8 18h1v1h-1zM10 18h2v1h-2zM15 18h2v1h-2zM18 18h5v1h-5zM25 18h1v1h-1zM10 19h3v1h-3zM15 19h1v1h-1zM18 19h1v1h-1zM22 19h1v1h-1zM26 19h1v1h-1zM2 20h7v1h-7zM10 20h4v1h-4zM18 20h1v1h-1zM20 20h1v1h-1zM22 20h1v1h-1zM26 20h1v1h-1zM2 21h1v1h-1zM8 21h1v1h-1zM12 21h1v1h-1zM15 21h1v1h-1zM17 21h2v1h-2zM22 21h1v1h-1zM25 21h1v1h-1zM2 22h1v1h-1zM4 22h3v1h-3zM8 22h1v1h-1zM13 22h3v1h-3zM17 22h6v1h-6zM26 22h1v1h-1zM2 23h1v1h-1zM4 23h3v1h-3zM8 23h1v1h-1zM12 23h1v1h-1zM14 23h1v1h-1zM19 23h1v1h-1zM22 23h1v1h-1zM24 23h2v1h-2zM2 24h1v1h-1zM4 24h3v1h-3zM8 24h1v1h-1zM10 24h2v1h-2zM14 24h3v1h-3zM18 24h2v1h-2zM21 24h3v1h-3zM25 24h2v1h-2zM2 25h1v1h-1zM8 25h1v1h-1zM12 25h3v1h-3zM16 25h1v1h-1zM18 25h2v1h-2zM21 25h2v1h-2zM2 26h7v1h-7zM10 26h1v1h-1zM15 26h2v1h-2zM18 26h1v1h-1zM23 26h1v1h-1zM26 26h1v1h-1z","u":"https://tongdok.kr/e9"},"e10":{"n":29,"d":"M2 2h7v1h-7zM10 2h1v1h-1zM12 2h1v1h-1zM14 2h2v1h-2zM20 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM12 3h4v1h-4zM18 3h1v1h-1zM20 3h1v1h-1zM26 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h1v1h-1zM13 4h4v1h-4zM18 4h1v1h-1zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM11 5h1v1h-1zM13 5h3v1h-3zM17 5h1v1h-1zM20 5h1v1h-1zM22 5h3v1h-3zM26 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM11 6h2v1h-2zM16 6h1v1h-1zM20 6h1v1h-1zM22 6h3v1h-3zM26 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM10 7h2v1h-2zM14 7h3v1h-3zM20 7h1v1h-1zM26 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h7v1h-7zM11 9h2v1h-2zM14 9h1v1h-1zM16 9h3v1h-3zM2 10h1v1h-1zM4 10h1v1h-1zM8 10h2v1h-2zM18 10h1v1h-1zM21 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM2 11h3v1h-3zM6 11h2v1h-2zM11 11h1v1h-1zM14 11h1v1h-1zM17 11h1v1h-1zM20 11h2v1h-2zM23 11h1v1h-1zM25 11h2v1h-2zM2 12h3v1h-3zM6 12h4v1h-4zM13 12h1v1h-1zM15 12h1v1h-1zM17 12h1v1h-1zM21 12h4v1h-4zM26 12h1v1h-1zM3 13h1v1h-1zM6 13h2v1h-2zM11 13h3v1h-3zM16 13h2v1h-2zM19 13h3v1h-3zM23 13h1v1h-1zM6 14h3v1h-3zM12 14h2v1h-2zM16 14h1v1h-1zM18 14h1v1h-1zM20 14h1v1h-1zM26 14h1v1h-1zM3 15h1v1h-1zM7 15h1v1h-1zM10 15h1v1h-1zM12 15h1v1h-1zM16 15h3v1h-3zM20 15h2v1h-2zM25 15h2v1h-2zM2 16h3v1h-3zM6 16h4v1h-4zM12 16h2v1h-2zM15 16h3v1h-3zM23 16h2v1h-2zM26 16h1v1h-1zM5 17h2v1h-2zM10 17h2v1h-2zM16 17h3v1h-3zM20 17h4v1h-4zM2 18h5v1h-5zM8 18h1v1h-1zM10 18h5v1h-5zM16 18h1v1h-1zM18 18h5v1h-5zM25 18h1v1h-1zM10 19h1v1h-1zM14 19h1v1h-1zM16 19h1v1h-1zM18 19h1v1h-1zM22 19h1v1h-1zM26 19h1v1h-1zM2 20h7v1h-7zM10 20h3v1h-3zM14 20h3v1h-3zM18 20h1v1h-1zM20 20h1v1h-1zM22 20h1v1h-1zM26 20h1v1h-1zM2 21h1v1h-1zM8 21h1v1h-1zM12 21h3v1h-3zM17 21h2v1h-2zM22 21h1v1h-1zM26 21h1v1h-1zM2 22h1v1h-1zM4 22h3v1h-3zM8 22h1v1h-1zM12 22h1v1h-1zM15 22h8v1h-8zM26 22h1v1h-1zM2 23h1v1h-1zM4 23h3v1h-3zM8 23h1v1h-1zM12 23h1v1h-1zM15 23h1v1h-1zM19 23h1v1h-1zM22 23h1v1h-1zM24 23h2v1h-2zM2 24h1v1h-1zM4 24h3v1h-3zM8 24h1v1h-1zM10 24h4v1h-4zM18 24h2v1h-2zM21 24h3v1h-3zM25 24h2v1h-2zM2 25h1v1h-1zM8 25h1v1h-1zM11 25h1v1h-1zM15 25h1v1h-1zM18 25h2v1h-2zM21 25h2v1h-2zM2 26h7v1h-7zM10 26h2v1h-2zM13 26h3v1h-3zM18 26h1v1h-1zM23 26h1v1h-1zM26 26h1v1h-1z","u":"https://tongdok.kr/e10"},"e11":{"n":29,"d":"M2 2h7v1h-7zM10 2h1v1h-1zM13 2h3v1h-3zM17 2h2v1h-2zM20 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM11 3h2v1h-2zM16 3h1v1h-1zM18 3h1v1h-1zM20 3h1v1h-1zM26 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM11 4h2v1h-2zM14 4h1v1h-1zM18 4h1v1h-1zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM10 5h6v1h-6zM18 5h1v1h-1zM20 5h1v1h-1zM22 5h3v1h-3zM26 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM10 6h2v1h-2zM13 6h1v1h-1zM16 6h3v1h-3zM20 6h1v1h-1zM22 6h3v1h-3zM26 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM12 7h2v1h-2zM20 7h1v1h-1zM26 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h7v1h-7zM10 9h3v1h-3zM16 9h1v1h-1zM2 10h1v1h-1zM6 10h1v1h-1zM8 10h4v1h-4zM17 10h1v1h-1zM19 10h5v1h-5zM26 10h1v1h-1zM3 11h1v1h-1zM6 11h1v1h-1zM9 11h2v1h-2zM15 11h3v1h-3zM22 11h2v1h-2zM25 11h1v1h-1zM3 12h8v1h-8zM13 12h2v1h-2zM16 12h2v1h-2zM20 12h1v1h-1zM23 12h2v1h-2zM2 13h3v1h-3zM6 13h1v1h-1zM10 13h1v1h-1zM12 13h2v1h-2zM16 13h1v1h-1zM18 13h1v1h-1zM20 13h2v1h-2zM24 13h2v1h-2zM3 14h6v1h-6zM10 14h1v1h-1zM12 14h2v1h-2zM16 14h2v1h-2zM19 14h2v1h-2zM23 14h4v1h-4zM2 15h1v1h-1zM4 15h1v1h-1zM7 15h1v1h-1zM9 15h3v1h-3zM14 15h2v1h-2zM17 15h2v1h-2zM22 15h1v1h-1zM25 15h1v1h-1zM4 16h1v1h-1zM6 16h1v1h-1zM8 16h1v1h-1zM10 16h1v1h-1zM13 16h2v1h-2zM17 16h1v1h-1zM20 16h5v1h-5zM5 17h1v1h-1zM7 17h1v1h-1zM9 17h5v1h-5zM16 17h1v1h-1zM19 17h4v1h-4zM24 17h2v1h-2zM2 18h3v1h-3zM7 18h2v1h-2zM10 18h3v1h-3zM14 18h1v1h-1zM16 18h9v1h-9zM10 19h3v1h-3zM15 19h1v1h-1zM18 19h1v1h-1zM22 19h1v1h-1zM2 20h7v1h-7zM10 20h3v1h-3zM18 20h1v1h-1zM20 20h1v1h-1zM22 20h1v1h-1zM2 21h1v1h-1zM8 21h1v1h-1zM11 21h2v1h-2zM14 21h1v1h-1zM16 21h1v1h-1zM18 21h1v1h-1zM22 21h5v1h-5zM2 22h1v1h-1zM4 22h3v1h-3zM8 22h1v1h-1zM10 22h1v1h-1zM12 22h2v1h-2zM15 22h2v1h-2zM18 22h9v1h-9zM2 23h1v1h-1zM4 23h3v1h-3zM8 23h1v1h-1zM11 23h1v1h-1zM14 23h1v1h-1zM16 23h1v1h-1zM19 23h3v1h-3zM24 23h3v1h-3zM2 24h1v1h-1zM4 24h3v1h-3zM8 24h1v1h-1zM13 24h4v1h-4zM18 24h3v1h-3zM23 24h1v1h-1zM25 24h1v1h-1zM2 25h1v1h-1zM8 25h1v1h-1zM12 25h2v1h-2zM15 25h1v1h-1zM17 25h1v1h-1zM21 25h5v1h-5zM2 26h7v1h-7zM10 26h2v1h-2zM14 26h2v1h-2zM17 26h1v1h-1zM19 26h1v1h-1zM24 26h3v1h-3z","u":"https://tongdok.kr/e11"},"e12":{"n":29,"d":"M2 2h7v1h-7zM10 2h1v1h-1zM15 2h1v1h-1zM20 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM10 3h2v1h-2zM16 3h1v1h-1zM18 3h1v1h-1zM20 3h1v1h-1zM26 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM10 4h2v1h-2zM15 4h1v1h-1zM18 4h1v1h-1zM20 4h1v1h-1zM22 4h3v1h-3zM26 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM11 5h2v1h-2zM14 5h5v1h-5zM20 5h1v1h-1zM22 5h3v1h-3zM26 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h3v1h-3zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h3v1h-3zM26 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM15 7h2v1h-2zM18 7h1v1h-1zM20 7h1v1h-1zM26 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h7v1h-7zM11 9h2v1h-2zM14 9h2v1h-2zM17 9h2v1h-2zM2 10h1v1h-1zM5 10h6v1h-6zM12 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM18 10h2v1h-2zM22 10h1v1h-1zM24 10h3v1h-3zM2 11h1v1h-1zM4 11h2v1h-2zM7 11h1v1h-1zM9 11h3v1h-3zM14 11h1v1h-1zM16 11h3v1h-3zM21 11h5v1h-5zM2 12h1v1h-1zM7 12h2v1h-2zM10 12h3v1h-3zM14 12h1v1h-1zM17 12h2v1h-2zM22 12h2v1h-2zM26 12h1v1h-1zM4 13h4v1h-4zM11 13h2v1h-2zM16 13h3v1h-3zM21 13h1v1h-1zM23 13h4v1h-4zM4 14h1v1h-1zM6 14h1v1h-1zM8 14h2v1h-2zM11 14h3v1h-3zM16 14h1v1h-1zM18 14h1v1h-1zM20 14h1v1h-1zM26 14h1v1h-1zM2 15h1v1h-1zM4 15h1v1h-1zM6 15h2v1h-2zM11 15h1v1h-1zM14 15h2v1h-2zM17 15h2v1h-2zM22 15h1v1h-1zM25 15h1v1h-1zM2 16h2v1h-2zM5 16h2v1h-2zM8 16h1v1h-1zM10 16h1v1h-1zM12 16h1v1h-1zM15 16h1v1h-1zM17 16h1v1h-1zM19 16h1v1h-1zM22 16h5v1h-5zM2 17h1v1h-1zM4 17h2v1h-2zM10 17h3v1h-3zM14 17h1v1h-1zM17 17h1v1h-1zM21 17h1v1h-1zM23 17h2v1h-2zM26 17h1v1h-1zM2 18h1v1h-1zM5 18h1v1h-1zM8 18h2v1h-2zM13 18h4v1h-4zM18 18h5v1h-5zM24 18h2v1h-2zM10 19h1v1h-1zM13 19h1v1h-1zM16 19h1v1h-1zM18 19h1v1h-1zM22 19h1v1h-1zM24 19h2v1h-2zM2 20h7v1h-7zM10 20h1v1h-1zM12 20h1v1h-1zM14 20h1v1h-1zM16 20h1v1h-1zM18 20h1v1h-1zM20 20h1v1h-1zM22 20h1v1h-1zM26 20h1v1h-1zM2 21h1v1h-1zM8 21h1v1h-1zM10 21h1v1h-1zM13 21h1v1h-1zM15 21h4v1h-4zM22 21h1v1h-1zM2 22h1v1h-1zM4 22h3v1h-3zM8 22h1v1h-1zM10 22h4v1h-4zM15 22h1v1h-1zM17 22h6v1h-6zM25 22h2v1h-2zM2 23h1v1h-1zM4 23h3v1h-3zM8 23h1v1h-1zM10 23h3v1h-3zM14 23h3v1h-3zM18 23h3v1h-3zM25 23h2v1h-2zM2 24h1v1h-1zM4 24h3v1h-3zM8 24h1v1h-1zM11 24h3v1h-3zM15 24h1v1h-1zM19 24h1v1h-1zM22 24h5v1h-5zM2 25h1v1h-1zM8 25h1v1h-1zM11 25h1v1h-1zM13 25h3v1h-3zM20 25h3v1h-3zM24 25h3v1h-3zM2 26h7v1h-7zM10 26h2v1h-2zM13 26h3v1h-3zM18 26h1v1h-1zM23 26h1v1h-1zM26 26h1v1h-1z","u":"https://tongdok.kr/e12"}};
+
+const ERA_TEXT={
+ e1:'창조와 타락, 홍수와 바벨탑. 한 사람을 부르시기 전까지, 온 인류를 향한 하나님의 이야기입니다.',
+ e2:'아브라함·이삭·야곱·요셉. 한 가정을 통해 한 민족을 빚어 가시는 361년입니다.',
+ e3:'애굽의 노예 생활에서 광야 사십 년까지. 유월절과 홍해, 시내산 언약이 이 시대에 있습니다.',
+ e4:'요단을 건너 약속의 땅에 들어가고, 지파마다 기업을 나누어 받습니다.',
+ e5:'왕이 없어 각기 소견에 옳은 대로 행하던 시대. 타락과 부르짖음과 구원이 반복됩니다.',
+ e6:'사울·다윗·솔로몬. 한 나라로 우뚝 섰고, 예루살렘에 성전이 봉헌됩니다.',
+ e7:'남유다와 북이스라엘로 갈라진 326년. 선지자들이 가장 많이 일어난 시대입니다.',
+ e8:'성전도 나라도 없이 바벨론에서 보낸 시간. 그곳에서도 하나님은 일하십니다.',
+ e9:'세 차례의 귀환. 성전과 성벽을 다시 세우고, 무엇보다 말씀 위에 다시 섭니다.',
+ e10:'말라기 이후의 침묵. 헬라어와 회당과 로마 길이 복음의 길을 미리 냅니다.',
+ e11:'약속하신 분이 오셨습니다. 탄생에서 십자가와 부활까지, 성경 전체가 향해 온 자리입니다.',
+ e12:'오순절에 태어난 교회가 예루살렘에서 시작해 로마까지 퍼져 나갑니다.'
+};
+
+/* ===== 상태 ===== */
+const DUR=160, SPEED=6;
+const S={q:'',cats:new Set(),era:'',mode:'all',sel:null,exp:false,play:false,t:0,cue:null};
+
+const matches=it=>{
+  /* 검색 중에는 시대 제한을 풀어, 다른 시대 항목도 찾을 수 있게 한다 */
+  if(S.era&&!S.q.trim()){const E=ERAS.find(e=>e.id===S.era); if(!(it.s<=E.e&&it.e>=E.s)&&itEra(it).id!==S.era)return false;}
+  if(S.cats.size&&!S.cats.has(it.cat))return false;
+  return true;
+};
+const hits=it=>{
+  const q=S.q.trim().toLowerCase(); if(!q)return null;
+  if(it.name.toLowerCase().includes(q))return{f:'name'};
+  const t=it.tags.find(x=>x.toLowerCase().includes(q)); if(t)return{f:'tag',v:t};
+  if(it.ref.toLowerCase().includes(q))return{f:'ref'};
+  if(it.desc.toLowerCase().includes(q))return{f:'desc'};
+  return null;
+};
+const visible=it=>matches(it)&&(!S.q.trim()||hits(it));
+
+/* ===== 해설 구간(챕터) ===== */
+const CUE={};
+function cues(eid){
+  if(CUE[eid])return CUE[eid];
+  const list=ITEMS.filter(i=>itEra(i).id===eid).sort((a,b)=>a.s-b.s);
+  const pick=[]; const step=Math.max(1,Math.ceil(list.length/6));
+  for(let i=0;i<list.length&&pick.length<6;i+=step)pick.push(list[i]);
+  const n=Math.max(pick.length-1,1);
+  return CUE[eid]=pick.map((it,i)=>({t:Math.round(10+i*(DUR-26)/n),id:it.id,name:it.name}));
+}
+const cueAt=(cs,t)=>{let k=-1;cs.forEach((c,i)=>{if(t>=c.t)k=i});return k};
+const fmt=s=>Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0');
+
+/* ===== 타임라인 (v1과 동일) ===== */
+const measure=s=>[...s].reduce((a,ch)=>a+(/[\uAC00-\uD7A3]/.test(ch)?1:.56),0);
+
+function buildTimeline(scale,opt){
+  const W=TOTAL*scale, LW=opt.labelW, PAD=10;
+  const BH=opt.barH, GAP=opt.gap||3, ROW=BH+GAP;
+  const ERAH=opt.eraH, AXH=opt.axH||16;
+  const LPAD=opt.lpad||14, LGAP=opt.lgap||8;
+  const fs=opt.fs;
+
+  // 레인별 행 배치
+  const packed={},laneH={};
+  LANES.forEach(L=>{
+    const list=ITEMS.filter(i=>i.lane===L.id).map(i=>{
+      const x1=ux(i.s)*scale, x2=ux(i.e)*scale;
+      const w=Math.max(x2-x1,i.cat==='ev'?0:6);
+      const tw=measure(i.name)*fs+10;
+      const need=opt.dots?(i.cat==='ev'?8:w):(i.cat==='ev'?tw+9:tw);
+      return {it:i,x1,w,ext:x1+Math.max(w,need)};
+    }).sort((a,b)=>a.x1-b.x1);
+    const rowsEnd=[];
+    list.forEach(o=>{let r=0;while(rowsEnd[r]!==undefined&&rowsEnd[r]>o.x1-4)r++;rowsEnd[r]=o.ext;o.row=r});
+    packed[L.id]=list; laneH[L.id]=Math.max(rowsEnd.length,1)*ROW+LPAD;
+  });
+
+  let y=ERAH+AXH+6; const laneY={};
+  LANES.forEach(L=>{laneY[L.id]=y;y+=laneH[L.id]+LGAP});
+  const H=y+6;
+
+  let s='';
+  // 시대 띠
+  ERAS.forEach(E=>{
+    const x=ux(E.s)*scale,w=ux(E.e)*scale-x;
+    const on=!S.era||S.era===E.id;
+    s+=`<g class="bar" data-era="${E.id}" opacity="${on?1:.35}">
+      <rect x="${x}" y="0" width="${w}" height="${ERAH}" fill="${E.c}" rx="2"/>
+      ${w>34?`<text x="${x+w/2}" y="${ERAH/2+3.5}" fill="#0E1F38" font-size="${Math.min(fs+.5,11)}" font-weight="700" text-anchor="middle">${E.n}</text>`:''}
+    </g>`;
+  });
+  // 연도 눈금
+  [-2000,-1500,-1000,-500,-200,1,50,100].forEach(v=>{
+    const x=ux(v)*scale;
+    s+=`<line x1="${x}" y1="${ERAH}" x2="${x}" y2="${H}" stroke="rgba(242,236,216,.07)"/>
+        <text x="${x+3}" y="${ERAH+11}" fill="rgba(242,236,216,.4)" font-size="8.5" font-family="IBM Plex Mono,monospace">${v===1?'AD 1':(v<0?'BC '+(-v):'AD '+v)}</text>`;
+  });
+
+  LANES.forEach(L=>{
+    const ty=laneY[L.id];
+    s+=`<line x1="0" y1="${ty-7}" x2="${W}" y2="${ty-7}" stroke="rgba(242,236,216,.1)"/>`;
+    packed[L.id].forEach(o=>{
+      const i=o.it,vy=ty+o.row*ROW,vis=visible(i),sel=S.sel===i.id;
+      const cls=vis?'':'dimmed';
+      const col=sel?'#F2CC0C':i.color;
+      const tcol=sel?'#F2CC0C':'rgba(242,236,216,.9)';
+      if(i.cat==='ev'){
+        s+=`<g class="bar ${cls}" data-id="${i.id}">
+          <circle cx="${o.x1}" cy="${vy+BH/2}" r="${sel?4.5:3}" fill="${col}"/>
+          ${opt.dots?'':`<text x="${o.x1+7}" y="${vy+BH/2+3.2}" fill="${tcol}" font-size="${fs}" font-weight="${sel?700:400}">${i.name}</text>`}
+        </g>`;
+      }else{
+        const lbl=measure(i.name)*fs+8<=o.w;
+        const showTx=lbl||!opt.dots;
+        s+=`<g class="bar ${cls}" data-id="${i.id}">
+          <rect x="${o.x1}" y="${vy}" width="${o.w}" height="${BH}" rx="2.5" fill="${col}" ${sel?'stroke="#F2ECD8" stroke-width="1.2"':''}/>
+          ${showTx?`<text x="${lbl?o.x1+o.w/2:o.x1+o.w+5}" y="${vy+BH/2+3.4}" fill="${lbl?'#10203A':tcol}" font-size="${fs}" font-weight="${sel?700:500}" text-anchor="${lbl?'middle':'start'}">${i.name}</text>`:''}
+        </g>`;
+      }
+    });
+  });
+
+  // 좌측 고정 레인 라벨 (별도 SVG — 가로 스크롤에 따라가지 않는다)
+  let lbl=`<text x="9" y="${ERAH/2+3.5}" fill="#F2CC0C" font-size="${fs}" font-weight="700">시대</text>`;
+  LANES.forEach(L=>{
+    const ty=laneY[L.id];
+    lbl+=`<line x1="0" y1="${ty-7}" x2="${LW}" y2="${ty-7}" stroke="rgba(242,236,216,.1)"/>
+          <text x="9" y="${ty+9}" fill="#F2ECD8" font-size="${fs+.5}" font-weight="700">${opt.dots?L.sh:L.n}</text>`;
+    if(L.sub&&!opt.dots)lbl+=`<text x="9" y="${ty+21}" fill="rgba(242,236,216,.45)" font-size="${fs-.5}">${L.sub}</text>`;
+  });
+
+  const TH=H+PAD;
+  return {
+    body:`<svg width="${W+PAD*2}" height="${TH}" viewBox="0 0 ${W+PAD*2} ${TH}" xmlns="http://www.w3.org/2000/svg"><g transform="translate(${PAD},${PAD})">${s}</g></svg>`,
+    labels:`<svg width="${LW}" height="${TH}" viewBox="0 0 ${LW} ${TH}" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0,${PAD})">${lbl}</g></svg>`,
+    H:TH
+  };
+}
+
+function eraRibbon(scale){
+  const W=TOTAL*scale,H=26;
+  let s='';
+  ERAS.forEach(E=>{
+    const x=ux(E.s)*scale,w=Math.max(ux(E.e)*scale-x,10),on=S.era===E.id;
+    s+=`<g class="bar" data-era="${E.id}">
+      <rect x="${x}" y="${on?0:5}" width="${w}" height="${on?H:H-10}" rx="2.5" fill="${E.c}"
+        opacity="${!S.era||on?1:.4}" ${on?'stroke="#F2ECD8" stroke-width="1.2"':''}/>
+      ${w>34?`<text x="${x+w/2}" y="${(on?H:H-10)/2+(on?3.6:8.6)}" fill="#0E1F38" font-size="9" font-weight="700" text-anchor="middle">${E.n}</text>`:''}
+    </g>`;
+  });
+  return `<svg width="${W+24}" height="${H+4}" viewBox="0 0 ${W+24} ${H+4}" xmlns="http://www.w3.org/2000/svg"><g transform="translate(12,1)">${s}</g></svg>`;
+}
+
+/* ===== 카드 (v1과 동일) ===== */
+function cardHTML(it){
+  if(!it)return `<div class="empty"><b>항목을 선택하세요</b>연대표에서 성경책·사건·제국을 누르면<br>여기에 카드가 열립니다</div>`;
+  const E=itEra(it), C=CATS[it.cat];
+  const cross=ERA_FIX[it.name]?E:eraOf(it.e);
+  const eraTxt=E.id===cross.id?E.n:`${E.n} → ${cross.n}`;
+  const rel=ITEMS.filter(o=>o.id!==it.id&&o.tags.some(t=>it.tags.includes(t))).slice(0,4);
+  return `<div class="card">
+    <div class="card-top" style="--gold:${C.c}">
+      <div class="card-kind">${C.n}</div>
+      <h2 class="card-name">${it.name}</h2>
+      <div class="card-yr">${it.lab}</div>
+    </div>
+    <dl class="card-rows">
+      <div class="row"><dt>시대</dt><dd><span style="color:${E.c};font-weight:600">●</span> ${eraTxt}</dd></div>
+      ${it.ref!=='—'?`<div class="row"><dt>본문</dt><dd style="font-family:var(--f-num);font-size:12px">${it.ref}</dd></div>`:''}
+      <div class="row"><dt>한눈에</dt><dd>${it.desc}</dd></div>
+      ${it.tags.length?`<div class="row"><dt>인물·주제</dt><dd class="tags">${it.tags.map(t=>`<button data-tag="${t}">${t}</button>`).join('')}</dd></div>`:''}
+      <div class="row"><dt>강의</dt><dd><span class="lect todo">☐ 통큰통독 강의 회차 — 확인 예정</span></dd></div>
+      ${it.warn?`<div class="row"><dt>검수</dt><dd><span class="warnchip">확인 필요 — ${it.warn}</span></dd></div>`:''}
+      ${rel.length?`<div class="row"><dt>함께 보기</dt><dd class="tags">${rel.map(r=>`<button data-go="${r.id}">${r.name}</button>`).join('')}</dd></div>`:''}
+    </dl>
+  </div>`;
+}
+
+/* ===== 플레이어 ===== */
+function playerHTML(){
+  const E=ERAS.find(e=>e.id===S.era); if(!E)return '';
+  const cs=cues(E.id), k=cueAt(cs,S.t);
+  return `<div class="vp ${S.play?'on':''}">
+    <div class="vp-stage" style="--ec:${E.c}">
+      <div class="vp-brand">통큰통독 해설</div>
+      <div class="vp-badge todo">☐ 영상 제작 예정</div>
+      <div class="vp-t">${E.n}</div>
+      <div class="vp-sub">해설 영상 자리 · 재생하면 표가 따라갑니다 (${SPEED}배속 시연)</div>
+      <button class="vp-play" data-act="play" aria-label="${S.play?'일시정지':'재생'}">${S.play?'❚❚':'▶'}</button>
+    </div>
+    <div class="vp-bar" data-act="seek">
+      <div class="vp-fill" style="width:${S.t/DUR*100}%"></div>
+      ${cs.map((c,i)=>`<i class="${i===k?'hit':''}" style="left:${c.t/DUR*100}%" title="${c.name}"></i>`).join('')}
+    </div>
+    <div class="vp-cue"><time>${fmt(S.t)} / ${fmt(DUR)}</time>
+      ${k>=0?`지금 <b>${cs[k].name}</b>`:'구간 표시가 표와 연결됩니다'}
+      <a class="yt" href="https://youtu.be/MRd76A8A0Ws" target="_blank" rel="noopener">원본 강의 ↗</a></div>
+  </div>`;
+}
+function paint(){
+  const cs=cues(S.era),k=cueAt(cs,S.t);
+  document.querySelectorAll('.vp-fill').forEach(el=>el.style.width=(S.t/DUR*100)+'%');
+  document.querySelectorAll('.vp-cue time').forEach(el=>el.textContent=fmt(S.t)+' / '+fmt(DUR));
+  document.querySelectorAll('.vp-bar').forEach(bar=>bar.querySelectorAll('i').forEach((el,i)=>el.classList.toggle('hit',i===k)));
+}
+let timer=null,curCue=-2;
+function play(on){
+  S.play=on;
+  if(timer){clearInterval(timer);timer=null}
+  if(on){timer=setInterval(step,200)}
+  render();
+}
+function step(){
+  S.t=Math.min(S.t+SPEED*0.2,DUR);
+  const cs=cues(S.era),k=cueAt(cs,S.t);
+  if(k!==curCue){
+    curCue=k; S.cue=k>=0?cs[k].id:null;
+    render(); followCue();
+  } else paint();
+  if(S.t>=DUR){S.play=false;clearInterval(timer);timer=null;render()}
+}
+function followCue(){
+  if(!S.cue)return;
+  const el=document.querySelector(`.mi[data-id="${S.cue}"]`);
+  const sc=document.getElementById('m-scroll');
+  if(el)sc.scrollTo({top:el.offsetTop-Math.round(sc.clientHeight*0.42),behavior:'smooth'});
+  const it=byId(S.cue),pc=document.getElementById('tl-pc');
+  pc.scrollTo({left:Math.max(ux(it.s)*1.5+10-pc.clientWidth/2.6,0),behavior:'smooth'});
+}
+
+/* ===== 렌더 ===== */
+const $=s=>document.querySelector(s);
+
+function chipHTML(){
+  return FILTERS.map(f=>{
+    const cats=f.cats||[f.k], on=S.cats.size>0&&cats.every(c=>S.cats.has(c)), col=CATS[cats[0]].c;
+    return `<button class="chip" data-f="${f.k}" aria-pressed="${on}" style="${on?`background:${col};`:`border-color:${col}66;color:${col}`}">${f.n}</button>`;
+  }).join('')+`<select class="era-sel">${'<option value="">모든 시대</option>'+ERAS.map(e=>`<option value="${e.id}" ${S.era===e.id?'selected':''}>${e.n}</option>`).join('')}</select>`;
+}
+function resultHTML(){
+  if(!S.q.trim())return '';
+  const list=ITEMS.filter(i=>matches(i)&&hits(i)).slice(0,30);
+  if(!list.length)return `<div class="res" style="color:var(--dim);cursor:default">찾는 이름이 없습니다. 인물이나 사건 이름으로도 찾아보세요.</div>`;
+  return list.map(i=>{
+    const h=hits(i);
+    const sub=h.f==='tag'?`<small>인물·주제 · <span class="hit">${h.v}</span></small>`
+      :h.f==='ref'?`<small>본문 · ${i.ref}</small>`:h.f==='desc'?`<small>설명에서 발견</small>`:`<small>${CATS[i.cat].n}</small>`;
+    return `<div class="res" data-id="${i.id}"><span class="sw" style="background:${i.color}"></span><span>${i.name} ${sub}</span><span class="yr">${ylab(i)}</span></div>`;
+  }).join('');
+}
+function mobileList(){
+  const eras=S.mode==='era'?ERAS.filter(e=>e.id===S.era):ERAS;
+  const out=eras.map(E=>{
+    const list=ITEMS.filter(i=>itEra(i).id===E.id&&visible(i)).sort((a,b)=>a.s-b.s);
+    if(!list.length)return '';
+    return `<section class="era-blk" data-era="${E.id}">
+      ${S.mode==='era'?'':`<div class="era-head"><span class="era-dot" style="background:${E.c}"></span><h3>${E.n}</h3><span class="er-yr">${E.lab}</span></div>`}
+      <div class="era-items">${list.map(i=>{
+        const h=hits(i), t=h&&h.f==='tag'?` <span class="hit">· ${h.v}</span>`:'';
+        return `<button class="mi ${i.cat==='ev'?'ev':''} ${S.sel===i.id?'on':''} ${S.cue===i.id?'cue':''}" data-id="${i.id}">
+          <span class="sw" style="background:${i.color}"></span><span>${i.name}${t}</span>
+          ${S.cue===i.id?'<span class="now">해설 중</span>':''}<span class="yr">${ylab(i)}</span></button>`;
+      }).join('')}</div></section>`;
+  }).join('');
+  return out||`<div class="empty" style="padding-top:50px"><b>결과 없음</b>필터를 줄이거나 다른 이름으로 찾아보세요</div>`;
+}
+function eraIntro(){
+  if(S.mode!=='era')return '';
+  const E=ERAS.find(e=>e.id===S.era);
+  return `<div class="era-intro"><h3>${E.n}</h3><div class="yr">${E.lab}</div><p>${ERA_TEXT[E.id]}</p></div>`;
+}
+
+let lastSel=null;
+function render(){
+  const isEra=S.mode==='era', E=isEra?ERAS.find(e=>e.id===S.era):null;
+
+  $('#pc-url').innerHTML=isEra?`통큰통독.com/t/<b>${S.era}</b>  <span style="opacity:.6">— ${E.n}</span>`:'통큰통독.com / 연대표';
+  $('#back-pc').hidden=!isEra; $('#back-m').hidden=!isEra;
+  $('#land-t').textContent=isEra?E.n+' — 전체 흐름 속 위치':'전체 연대표';
+
+  $('#chips-pc').innerHTML=chipHTML(); $('#chips-m').innerHTML=chipHTML();
+
+  const T1=buildTimeline(1.5,{labelW:104,barH:16,eraH:22,fs:9.5});
+  $('#tl-pc').innerHTML=T1.body; $('#tl-lab-pc').innerHTML=T1.labels;
+  const T2=buildTimeline(1.0,{labelW:56,barH:6,eraH:10,fs:6,gap:2,lpad:5,lgap:4,axH:9,dots:true});
+  $('#tl-land').innerHTML=T2.body; $('#tl-lab-land').innerHTML=T2.labels;
+
+  $('#ribbon').innerHTML=eraRibbon(.78);
+  $('#era-intro').innerHTML=eraIntro();
+  const ph=isEra?playerHTML():'';
+  $('#m-video').innerHTML=ph; $('#m-video').style.display=isEra?'':'none';
+  $('#m-mini').innerHTML=ph;
+  if(!isEra)$('#m-mini').classList.remove('show');
+  $('#land-vid').innerHTML=isEra?playerHTML():'';
+  $('#land-vid').classList.toggle('hide',!isEra);
+
+  $('#side-pc').innerHTML=(isEra?playerHTML()+`<div class="era-brief"><h4>${E.n}</h4><div class="yr">${E.lab}</div><p>${ERA_TEXT[E.id]}</p></div>`:'')
+    +(S.sel?cardHTML(byId(S.sel)):(isEra?'':cardHTML(null)));
+  $('#m-list').innerHTML=mobileList();
+  $('#card-m').innerHTML=cardHTML(byId(S.sel));
+  $('#res-pc').innerHTML=resultHTML(); $('#res-m').innerHTML=resultHTML();
+  $('#q-pc').value=S.q; $('#q-m').value=S.q;
+
+  const sc=$('#sheet-m'), si=byId(S.sel);
+  sc.classList.toggle('up',!!si&&S.exp); sc.classList.toggle('peek',!!si&&!S.exp);
+  $('#peek-m').innerHTML=si?`<span class="sw" style="background:${si.color}"></span><span class="nm">${si.name}</span><span class="yr">${ylab(si)}</span><span class="cv">${S.exp?'접기 ▼':'카드 열기 ▲'}</span>`:'';
+
+  document.querySelectorAll('.qr-card').forEach(b=>b.setAttribute('aria-current',String(b.dataset.era===S.era&&isEra)));
+  if(typeof realMenu==='function')realMenu();
+
+  const line=$('#syncline'), msg=S.play&&S.cue?`해설이 <b style="color:#F2ECD8">${byId(S.cue).name}</b> 지점 — 표도 같이 이동`
+    :S.sel?`두 화면 모두 <b style="color:#F2ECD8">${byId(S.sel).name}</b> 표시 중`
+    :isEra?`<b style="color:#F2ECD8">${E.n}</b> 화면 · 재생을 누르면 표가 따라갑니다`:'QR을 눌러 시작하세요';
+  if(msg!==lastSel){lastSel=msg;line.innerHTML=`<span class="syncdot"></span> ${msg}`;
+    line.classList.add('flash');setTimeout(()=>line.classList.remove('flash'),450)}
+}
+
+/* ===== 진입 ===== */
+function openEra(eid){
+  S.mode='era';S.era=eid;S.sel=null;S.exp=false;S.q='';S.t=0;S.cue=null;curCue=-2;
+  $('#m-scroll').scrollTop=0; $('#m-mini').classList.remove('show');
+  render();
+  const rb=$('#ribbon'),E=ERAS.find(e=>e.id===eid);
+  rb.scrollTo({left:Math.max(ux(E.s)*.78-rb.clientWidth/3,0),behavior:'smooth'});
+  const pc=$('#tl-pc'); pc.scrollTo({left:Math.max(ux(E.s)*1.5+10-pc.clientWidth/3,0),behavior:'smooth'});
+  document.querySelector('.stage').scrollIntoView({behavior:'smooth',block:'center'});
+  setTimeout(()=>play(true),700);
+}
+function goAll(){S.mode='all';S.era='';S.cue=null;S.sel=null;play(false);}
+
+function select(id,peekOnly){
+  const it=byId(id); if(!it)return;
+  /* 시대 화면에서 다른 시대 항목을 고르면 그 시대로 옮겨 간다 */
+  if(S.mode==='era'&&itEra(it).id!==S.era){
+    S.era=itEra(it).id; S.t=0; S.cue=null; curCue=-2;
+    if(timer){clearInterval(timer);timer=null} S.play=false;
+    const rb=$('#ribbon'),E=ERAS.find(e=>e.id===S.era);
+    setTimeout(()=>rb.scrollTo({left:Math.max(ux(E.s)*.78-rb.clientWidth/3,0),behavior:'smooth'}),0);
+  }
+  S.sel=id;S.q='';S.exp=!peekOnly;render();
+  const pc=$('#tl-pc');pc.scrollTo({left:Math.max(ux(it.s)*1.5+10-pc.clientWidth/2.6,0),behavior:'smooth'});
+  const lb=$('#tl-land');lb.scrollTo({left:Math.max(ux(it.s)*1.0+10-lb.clientWidth/2.4,0),behavior:'smooth'});
+}
+
+/* ===== 이벤트 ===== */
+$('#qr-row').innerHTML=ERAS.map(E=>{
+  const q=QR[E.id];
+  return `<button class="qr-card" data-era="${E.id}">
+    <svg viewBox="0 0 ${q.n} ${q.n}" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+      <rect width="${q.n}" height="${q.n}" fill="#fff"/><path d="${q.d}" fill="#14263F"/></svg>
+    <div class="en">${E.n}</div><div class="ed">tongdok.kr/${E.id}</div>
+    <span class="ev todo">☐ 발급 예정</span></button>`;
+}).join('');
+
+document.addEventListener('click',e=>{
+  const qr=e.target.closest('.qr-card'); if(qr)return openEra(qr.dataset.era);
+  if(e.target.closest('#back-pc')||e.target.closest('#back-m'))return goAll();
+  if(e.target.closest('[data-act="play"]'))return play(!S.play);
+  const seek=e.target.closest('[data-act="seek"]');
+  if(seek){const r=seek.getBoundingClientRect();S.t=Math.max(0,Math.min(1,(e.clientX-r.left)/r.width))*DUR;
+    const cs=cues(S.era),k=cueAt(cs,S.t);curCue=k;S.cue=k>=0?cs[k].id:null;render();followCue();return}
+  const bar=e.target.closest('.bar[data-id]'); if(bar)return select(bar.dataset.id);
+  const eb=e.target.closest('.bar[data-era]'); if(eb)return openEra(eb.dataset.era);
+  const res=e.target.closest('.res[data-id]'); if(res)return select(res.dataset.id);
+  const mi=e.target.closest('.mi'); if(mi)return select(mi.dataset.id);
+  const chip=e.target.closest('.chip');
+  if(chip){const f=FILTERS.find(x=>x.k===chip.dataset.f),cats=f.cats||[f.k],on=cats.every(c=>S.cats.has(c));
+    cats.forEach(c=>on?S.cats.delete(c):S.cats.add(c));return render()}
+  const tag=e.target.closest('[data-tag]'); if(tag){S.q=tag.dataset.tag;S.sel=null;S.exp=false;return render()}
+  const go=e.target.closest('[data-go]'); if(go)return select(go.dataset.go);
+  if(e.target.closest('#peek-m')){S.exp=!S.exp;return render()}
+  if(e.target.id==='sheet-x'){S.sel=null;S.exp=false;return render()}
+  if(!e.target.closest('.search')){$('#res-pc').innerHTML='';$('#res-m').innerHTML=''}
+});
+document.addEventListener('input',e=>{
+  if(e.target.id==='q-pc'||e.target.id==='q-m'){S.q=e.target.value;S.sel=null;S.exp=false;render();e.target.focus()}
+});
+document.addEventListener('change',e=>{
+  if(e.target.classList.contains('era-sel')){e.target.value?openEra(e.target.value):goAll()}
+});
+$('#m-scroll').addEventListener('scroll',()=>{
+  $('#m-mini').classList.toggle('show', S.mode==='era' && $('#m-scroll').scrollTop>150);
+},{passive:true});
+/* 실사용 모드: 하단 시대 메뉴 + 기기 방향 자동 전환 */
+const MQ_REAL=matchMedia('(max-width:820px),(max-height:540px) and (max-width:1100px)');
+const MQ_LAND=matchMedia('(orientation:landscape)');
+function realMenu(){
+  if(!MQ_REAL.matches)return;
+  $('#real-menu').innerHTML=`<button data-era="">전체</button>`+
+    ERAS.map(E=>`<button data-era="${E.id}" aria-current="${S.mode==='era'&&S.era===E.id}"
+      style="${S.mode==='era'&&S.era===E.id?`background:${E.c};border-color:${E.c}`:''}">${E.n}</button>`).join('');
+}
+$('#real-menu').addEventListener('click',e=>{
+  const b=e.target.closest('button[data-era]'); if(!b)return;
+  b.dataset.era?openEra(b.dataset.era):goAll();
+});
+function orient(){ if(MQ_REAL.matches) phone.dataset.o=MQ_LAND.matches?'land':'port'; }
+MQ_LAND.addEventListener('change',()=>{orient();render()});
+MQ_REAL.addEventListener('change',()=>{orient();render()});
+orient();
+
+$('#btn-port').onclick=()=>{phone.dataset.o='port';$('#btn-port').setAttribute('aria-pressed','true');$('#btn-land').setAttribute('aria-pressed','false')};
+$('#btn-land').onclick=()=>{phone.dataset.o='land';$('#btn-land').setAttribute('aria-pressed','true');$('#btn-port').setAttribute('aria-pressed','false')};
+
+render();
+</script>
+</body>
+</html>
